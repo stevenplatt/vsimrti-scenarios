@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- file version: 2013-04-05 -->
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://www.dcaiti.tu-berlin.de/research/simulation/download/get/etc/logback.xsd">
+    <!--timestamp key="timestamp" datePattern="yyyy-MM-dd-HH:mm:ss" /-->
+
+    <!--######################## APPENDER ############################### -->
+    <!-- Console logger -->
+
+    <if condition='isDefined("logDirectory")'>
+        <then>
+            <property name="logDirectory" value="${logDirectory}"/>
+            <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <!-- Logger for Time Advances -->
+            <appender name="STDOUT-TimeAdvance" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <!-- Difference to previous logger: no %n at line end... -->
+                    <pattern>%date{HH:mm:ss} - %msg</pattern>
+                </encoder>
+            </appender>
+            <!-- Logger for DBloading progress -->
+            <appender name="STDOUT-DbLoading" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <!-- Difference to previous logger: no %n at line end... -->
+                    <pattern>%date{HH:mm:ss.SSS} - %msg</pattern>
+                </encoder>
+            </appender>
+            <!-- Logger for plain messages -->
+            <appender name="STDOUT-MessageOnly" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%msg%n</pattern>
+                </encoder>
+            </appender>
+            <!-- File Appender for different components -->
+            <appender name="VsimrtiLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/VSimRTI.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="TrafficLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Traffic.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+                <append>false</append>
+            </appender>
+            <appender name="CommunicationLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Communication.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="CommunicationDetailsLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/CommunicationDetails.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%msg%n</pattern>
+                </encoder>
+                <append>false</append>
+            </appender>
+            <appender name="ApplicationNTLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/ApplicationNT.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <appender name="ApplicationNtLogDelegation" class="ch.qos.logback.classic.sift.SiftingAppender">
+                <discriminator>
+                    <key>path</key>
+                    <defaultValue>unknown</defaultValue>
+                </discriminator>
+                <sift>
+                    <appender name="FILE-${unitId}" class="ch.qos.logback.core.FileAppender">
+                        <file>${logDirectory}/appsNT/${path}.log</file>
+                        <layout class="ch.qos.logback.classic.PatternLayout">
+                            <pattern>%date %-5level - %msg%n</pattern>
+                        </layout>
+                    </appender>
+                </sift>
+            </appender>
+
+            <appender name="GeneralPurposeAmbassador" class="ch.qos.logback.classic.sift.SiftingAppender">
+                <discriminator>
+                    <key>loggerId</key>
+                    <defaultValue>unknown</defaultValue>
+                </discriminator>
+                <sift>
+                    <appender name="FILE-${loggerId}" class="ch.qos.logback.core.FileAppender">
+                        <file>${logDirectory}/loggerId-${loggerId}.log</file>
+                        <layout class="ch.qos.logback.classic.PatternLayout">
+                            <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                        </layout>
+                    </appender>
+                </sift>
+            </appender>
+
+            <appender name="StatisticsLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/statistics.csv</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} [%thread] - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="MappingLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Mapping.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <logger name="dbLoadingProgress" additivity="false" level="INFO">
+                <appender-ref ref="STDOUT-DbLoading"/>
+            </logger>
+            <appender name="NavigationLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Navigation.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="EnvironmentLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Environment.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="Cell2Log" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Cell2.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="BatteryLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/Battery.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+            <appender name="ChargingStationLog" class="ch.qos.logback.core.FileAppender">
+                <file>${logDirectory}/ChargingStation.log</file>
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>%date %-5level %logger{0} - %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <!--######################## LOGGER ############################### -->
+            <!-- Creating the reference between certain VSimRTI classes and logback
+                appenders -->
+            <logger name="VSimRTIStarter" additivity="false" level="INFO">
+                <appender-ref ref="VsimrtiLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.docker" additivity="false" level="INFO">
+                <appender-ref ref="VsimrtiLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.sumo" additivity="false" level="INFO">
+                <appender-ref ref="TrafficLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.omnetpp" additivity="false" level="INFO">
+                <appender-ref ref="CommunicationLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.ns3" additivity="false" level="INFO">
+                <appender-ref ref="CommunicationLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.sns" additivity="false" level="INFO">
+                <appender-ref ref="CommunicationLog"/>
+            </logger>
+            <!-- NOTE: do not specify logging levels other than "INFO" use omnetpp.ini (OMNeT++) for logging configuration -->
+            <logger name="OmnetppFederate" additivity="false" level="INFO">
+                <appender-ref ref="CommunicationDetailsLog"/>
+            </logger>
+            <logger name="Ns3Federate" additivity="false" level="INFO">
+                <appender-ref ref="CommunicationDetailsLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.applicationNT.ambassador.navigation" additivity="false" level="INFO">
+                <appender-ref ref="NavigationLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.applicationNT" additivity="false" level="INFO">
+                <appender-ref ref="ApplicationNTLog"/>
+            </logger>
+            <logger name="ApplicationNtLogDelegate" additivity="false" level="INFO">
+                <appender-ref ref="ApplicationNtLogDelegation"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.eventserver" additivity="false" level="INFO">
+                <appender-ref ref="EnvironmentLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.mapping3" additivity="false" level="INFO">
+                <appender-ref ref="MappingLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.lib.routing" additivity="false" level="INFO">
+                <appender-ref ref="NavigationLog"/>
+            </logger>
+            <logger name="com.graphhopper" additivity="false" level="INFO">
+                <appender-ref ref="NavigationLog"/>
+            </logger>
+            <logger name="net.sf.jsi" additivity="false" level="OFF">
+                <appender-ref ref="NavigationLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.cell2" additivity="false" level="INFO">
+                <appender-ref ref="Cell2Log"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.battery" additivity="false" level="INFO">
+                <appender-ref ref="BatteryLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.phabmacs" additivity="false" level="INFO">
+                <appender-ref ref="TrafficLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.fed.chargingstation" additivity="false" level="INFO">
+                <appender-ref ref="ChargingStationLog"/>
+            </logger>
+            <logger name="statistics" additivity="false" level="OFF">
+                <appender-ref ref="StatisticsLog"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.rti.services.time" additivity="false" level="INFO">
+                <appender-ref ref="STDOUT-TimeAdvance"/>
+            </logger>
+            <logger name="com.dcaiti.vsimrti.start" additivity="false" level="INFO">
+                <appender-ref ref="STDOUT-MessageOnly"/>
+            </logger>
+            <!-- All other stuff, which was not logged by other loggers before goes
+                to stdout and VSimRTI.log -->
+            <root level="INFO">
+                <appender-ref ref="STDOUT"/>
+                <appender-ref ref="VsimrtiLog"/>
+            </root>
+        </then>
+    </if>
+
+</configuration>

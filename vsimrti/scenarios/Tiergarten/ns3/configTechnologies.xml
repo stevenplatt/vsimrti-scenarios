@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3Configuration>
+    <installers>
+        <installer type="ns3::WifiVehicleInstaller" name="WifiVehicle" file="confWifi.xml" default="true"/>
+        <installer type="ns3::MobilityModelInstaller" name="Mobility" default="true"/>
+    </installers>
+</ns3Configuration>

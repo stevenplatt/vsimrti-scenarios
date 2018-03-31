@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>VSimRTI WebSocket Visualizer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8">
+<style>
+    html, body, #map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script>
+        // Global variable container
+        var WEBSOCKET_VISUALIZER = {};
+
+        var vehicleMarker = createMarker("vehicle.png");
+        var vehicleSendingMarker = createMarker("vehicle-sending.png");
+        var vehicleReceivingMarker = createMarker("vehicle-receiving.png");
+        var vehicleParkingMarker = createMarker("vehicle-parking.png");
+        var vehicleChargingMarker = createMarker("vehicle-charging.png");
+        var equippedVehicleMarker = createMarker("vehicle-equipped.png");
+
+        var roadsideUnitMarker = createMarker("roadside-unit.png");
+        var roadsideUnitSendingMarker = createMarker("roadside-unit-sending.png");
+        var roadsideUnitReceivingMarker = createMarker("roadside-unit-receiving.png");
+
+        var trafficLightMarker = createMarker("traffic-light.png");
+        var trafficLightSendingMarker = createMarker("traffic-light-sending.png");
+        var trafficLightReceivingMarker = createMarker("traffic-light-receiving.png");
+        var chargingStationMarker = createMarker("charging-station.png");
+        var chargingStationSendingMarker = createMarker("charging-station-sending.png");
+        var chargingStationReceivingMarker = createMarker("charging-station-receiving.png");
+        var chargingStationChargingMarker = createMarker("charging-station-charging.png");
+
+        var UnitState = { "Normal" : 0x00, "Parking" : 0x01, "Charging" : 0x02 };
+
+        var mapIconsCollectionLogo = "map-icons-collection.gif";
+        var mapIconsCollectionLink = "http://mapicons.nicolasmollet.com";
+
+        WEBSOCKET_VISUALIZER.units = [];
+        WEBSOCKET_VISUALIZER.sendingUnits = [];
+        WEBSOCKET_VISUALIZER.receivingUnits = [];
+        WEBSOCKET_VISUALIZER.equippedUnits = [];
+        WEBSOCKET_VISUALIZER.centerInitialized = false;
+        WEBSOCKET_VISUALIZER.infoString = document.createElement("h2");
+        WEBSOCKET_VISUALIZER.mapIconsCollectionCredit = document.createElement("img");
+
+        function consoleLog(string) {
+            console.log(string);
+        }
+
+        function consoleLogJSON(jsonObject) {
+            console.log(JSON.stringify(jsonObject));
+        }
+
+        function initialize() {
+            var infoStringDiv = document.createElement("div");
+            WEBSOCKET_VISUALIZER.infoString.style.color = "black";
+            WEBSOCKET_VISUALIZER.infoString.innerHTML = "Waiting for connection";
+            infoStringDiv.appendChild(WEBSOCKET_VISUALIZER.infoString);
+
+            var mapIconsCollectionCreditLink = document.createElement("a");
+            WEBSOCKET_VISUALIZER.mapIconsCollectionCredit.src = "markers/" + mapIconsCollectionLogo;
+            mapIconsCollectionCreditLink.href = mapIconsCollectionLink;
+            mapIconsCollectionCreditLink.title = mapIconsCollectionLink;
+            mapIconsCollectionCreditLink.appendChild(WEBSOCKET_VISUALIZER.mapIconsCollectionCredit);
+
+            var mapStyle = [
+                {
+                    featureType: "all",
+                    elementType: "all",
+                        stylers: [
+                            { saturation: -100 }
+                        ]
+                }
+            ];
+
+            var mapOptions = {
+                zoom: 3,
+                center: new google.maps.LatLng(52.6315063857021,13.565019942248075),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: mapStyle
+            };
+
+            WEBSOCKET_VISUALIZER.map = new google.maps.Map(
+                document.getElementById("map-canvas"),
+                mapOptions
+            );
+
+            WEBSOCKET_VISUALIZER.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(infoStringDiv);
+            WEBSOCKET_VISUALIZER.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(mapIconsCollectionCreditLink);
+        }
+
+        function updateVehicle() {
+            updatedLatLng = new google.maps.LatLng(this.longLat.latitude, this.longLat.longitude);
+
+            if (!(this.name in WEBSOCKET_VISUALIZER.units)) {
+                WEBSOCKET_VISUALIZER.units[this.name] = new google.maps.Marker({
+                    position: updatedLatLng,
+                    map: WEBSOCKET_VISUALIZER.map,
+                    icon: vehicleMarker
+                });
+
+                bindInfoWindow(WEBSOCKET_VISUALIZER.units[this.name], WEBSOCKET_VISUALIZER.map, new google.maps.InfoWindow(), JSON.stringify(this.name));
+                WEBSOCKET_VISUALIZER.units[this.name].annotation = JSON.stringify(this.name);
+            }
+            else {
+                WEBSOCKET_VISUALIZER.units[this.name].setPosition(updatedLatLng);
+                if (this.name in WEBSOCKET_VISUALIZER.sendingUnits || this.name in WEBSOCKET_VISUALIZER.receivingUnits) {
+                    return;
+                }
+                else if (this.stopped) {
+                    if (this.vehicleAdditionalInformation.vehicleElectricInformation.charging) {
+                        WEBSOCKET_VISUALIZER.units[this.name].unitState = UnitState.Charging;
+                        WEBSOCKET_VISUALIZER.units[this.name].setIcon(getChargingMarker(this.name));
+                    }
+                    else {
+                        WEBSOCKET_VISUALIZER.units[this.name].unitState = UnitState.Parking;
+                        WEBSOCKET_VISUALIZER.units[this.name].setIcon(getParkingMarker(this.name));
+                    }
+                }
+                else {
+                    WEBSOCKET_VISUALIZER.units[this.name].unitState = UnitState.Normal;
+                    WEBSOCKET_VISUALIZER.units[this.name].setIcon(getMarker(this.name));
+                }
+            }
+
+            WEBSOCKET_VISUALIZER.infoString.innerHTML = this.time/1000000000 + " s";
+
+            centerMap();
+        }
+
+        function removeVehicle() {
+            if (this in WEBSOCKET_VISUALIZER.units) {
+                WEBSOCKET_VISUALIZER.units[this].setMap(null);
+            }
+        }
+
+        function sendV2XMessage(sendV2XMessage) {
+            var srcNodeName = sendV2XMessage.message.routing.sourceAddressContainer.sourceName;
+            if (srcNodeName in WEBSOCKET_VISUALIZER.units) {
+                if (!(srcNodeName in WEBSOCKET_VISUALIZER.sendingUnits)) {
+                    WEBSOCKET_VISUALIZER.sendingUnits[srcNodeName] = true;
+                }
+            }
+        }
+
+        function receiveV2XMessage(receiveV2XMessage) {
+            if (receiveV2XMessage.receiverName in WEBSOCKET_VISUALIZER.units) {
+                if (!(receiveV2XMessage.receiverName in WEBSOCKET_VISUALIZER.receivingUnits)) {
+                    WEBSOCKET_VISUALIZER.receivingUnits[receiveV2XMessage.receiverName] = true;
+                }
+            }
+        }
+
+        function updateSendingUnits() {
+            if (this in WEBSOCKET_VISUALIZER.sendingUnits) {
+                if (WEBSOCKET_VISUALIZER.sendingUnits[this] == true) {
+                    WEBSOCKET_VISUALIZER.sendingUnits[this] = false;
+                    WEBSOCKET_VISUALIZER.units[this].setIcon(getSendingMarker(this));
+                }
+                else {
+                    switch (WEBSOCKET_VISUALIZER.units[this].unitState) {
+                        case UnitState.Normal:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getMarker(this));
+                            break;
+                        case UnitState.Parking:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getParkingMarker(this));
+                            break;
+                        case UnitState.Charging:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getChargingMarker(this));
+                            break;
+                        default:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getMarker(this));
+                            break;
+                    }
+                    delete WEBSOCKET_VISUALIZER.sendingUnits[this];
+                }
+            }
+        }
+
+        function updateReceivingUnits() {
+            if (this in WEBSOCKET_VISUALIZER.receivingUnits) {
+                if (WEBSOCKET_VISUALIZER.receivingUnits[this] == true) {
+                    WEBSOCKET_VISUALIZER.receivingUnits[this] = false;
+                    WEBSOCKET_VISUALIZER.units[this].setIcon(getReceivingMarker(this));
+                }
+                else {
+                    switch (WEBSOCKET_VISUALIZER.units[this].unitState) {
+                        case UnitState.Normal:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getMarker(this));
+                            break;
+                        case UnitState.Parking:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getParkingMarker(this));
+                            break;
+                        case UnitState.Charging:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getChargingMarker(this));
+                            break;
+                        default:
+                            WEBSOCKET_VISUALIZER.units[this].setIcon(getMarker(this));
+                            break;
+                    }
+                    delete WEBSOCKET_VISUALIZER.receivingUnits[this];
+                }
+            }
+        }
+
+        function addUnit(addedUnit) {
+            if (!(addedUnit.name in WEBSOCKET_VISUALIZER.units)) {
+                updatedLatLng = new google.maps.LatLng(addedUnit.position.latitude, addedUnit.position.longitude);
+                WEBSOCKET_VISUALIZER.units[addedUnit.name] = new google.maps.Marker({
+                    position: updatedLatLng,
+                    map: WEBSOCKET_VISUALIZER.map,
+                    icon: getMarker(addedUnit.name)
+                });
+                bindInfoWindow(WEBSOCKET_VISUALIZER.units[addedUnit.name], WEBSOCKET_VISUALIZER.map, new google.maps.InfoWindow(), JSON.stringify(addedUnit.name));
+                WEBSOCKET_VISUALIZER.units[addedUnit.name].unitState = UnitState.Normal;
+                WEBSOCKET_VISUALIZER.units[addedUnit.name].annotation = JSON.stringify(addedUnit.name);
+            }
+        }
+
+        function updateChargingStation(chargingStation) {
+            if (chargingStation.name in WEBSOCKET_VISUALIZER.units) {
+                if (chargingStation.chargingVehicles > 0) {
+                    WEBSOCKET_VISUALIZER.units[chargingStation.name].unitState = UnitState.Charging;
+                    WEBSOCKET_VISUALIZER.units[chargingStation.name].setIcon(getChargingMarker(chargingStation.name));
+                }
+                else {
+                    WEBSOCKET_VISUALIZER.units[chargingStation.name].unitState = UnitState.Normal;
+                    WEBSOCKET_VISUALIZER.units[chargingStation.name].setIcon(getMarker(chargingStation.name));
+                }
+            }
+        }
+
+        function updateEquippedUnits(updatedUnit){
+            //WEBSOCKET_VISUALIZER.units[updatedUnit.applicationVehicle.name].setIcon(equippedVehicleMarker);
+            if (!(updatedUnit.name in WEBSOCKET_VISUALIZER.equippedUnits) && updatedUnit.applicationVehicle.applications.length > 0) {
+                WEBSOCKET_VISUALIZER.equippedUnits[updatedUnit.applicationVehicle.name] = true;
+            }
+        }
+
+        function bindInfoWindow(marker, map, infoWindow, html) {
+            marker.annotation = html;
+            google.maps.event.addListener(marker, "click", function() {
+                infoWindow.setContent(marker.annotation);
+                infoWindow.open(map, marker);
+            });
+        }
+
+        function centerMap() {
+            if (!WEBSOCKET_VISUALIZER.centerInitialized) {
+                WEBSOCKET_VISUALIZER.map.panTo(updatedLatLng);
+                WEBSOCKET_VISUALIZER.map.setZoom(14);
+                WEBSOCKET_VISUALIZER.centerInitialized = true;
+            }
+        }
+
+        function createMarker(filename) {
+            var marker = {
+                url: "markers/" + filename,
+                size: new google.maps.Size(32,37),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(16,37)
+            };
+
+            return marker;
+        }
+
+        function getMarker(name) {
+            switch (true) {
+                case /veh/.test(name):
+                    if(name in WEBSOCKET_VISUALIZER.equippedUnits) {
+                        return equippedVehicleMarker;
+                    }
+                    else{
+                        return vehicleMarker;
+                    }
+                case /rsu/.test(name):
+                    return roadsideUnitMarker;
+                case /tl/.test(name):
+                    return trafficLightMarker;
+                case /cs/.test(name):
+                    return chargingStationMarker;
+            }
+        }
+
+        function getSendingMarker(name) {
+            switch (true) {
+                case /veh/.test(name):
+                    return vehicleSendingMarker;
+                case /rsu/.test(name):
+                    return roadsideUnitSendingMarker;
+                case /tl/.test(name):
+                    return trafficLightSendingMarker;
+                case /cs/.test(name):
+                    return chargingStationSendingMarker;
+            }
+        }
+
+        function getReceivingMarker(name) {
+            switch (true) {
+                case /veh/.test(name):
+                    return vehicleReceivingMarker;
+                case /rsu/.test(name):
+                    return roadsideUnitReceivingMarker;
+                case /tl/.test(name):
+                    return trafficLightReceivingMarker;
+                case /cs/.test(name):
+                    return chargingStationReceivingMarker;
+            }
+        }
+
+        function getParkingMarker(name) {
+            switch (true) {
+                case /veh/.test(name):
+                    return vehicleParkingMarker;
+            }
+        }
+
+        function getChargingMarker(name) {
+            switch (true) {
+                case /veh/.test(name):
+                    return vehicleChargingMarker;
+                case /cs/.test(name):
+                    return chargingStationChargingMarker;
+            }
+        }
+
+        function deleteAllMarkers() {
+            if (WEBSOCKET_VISUALIZER.units) {
+                for (i in WEBSOCKET_VISUALIZER.units) {
+                    WEBSOCKET_VISUALIZER.units[i].setMap(null);
+                }
+                WEBSOCKET_VISUALIZER.units = [];
+            }
+            WEBSOCKET_VISUALIZER.sendingUnits = [];
+            WEBSOCKET_VISUALIZER.receivingUnits = [];
+            WEBSOCKET_VISUALIZER.equippedUnits = [];
+            WEBSOCKET_VISUALIZER.centerInitialized = false;
+        }
+
+        function socketOnOpen() {
+            WEBSOCKET_VISUALIZER.webSocket.send("pull");
+        }
+
+        function socketOnMessage(evt) {
+            data = JSON.parse(evt.data);
+
+            if (data !== null) {
+                if (data.VehicleMovements) {
+                    jQuery.each(data.VehicleMovements.updated, updateVehicle);
+                    jQuery.each(data.VehicleMovements.removedNames, removeVehicle);
+                    jQuery.each(Object.keys(WEBSOCKET_VISUALIZER.receivingUnits), updateReceivingUnits);
+                    jQuery.each(Object.keys(WEBSOCKET_VISUALIZER.sendingUnits), updateSendingUnits);
+                }
+                else if (data.SendV2XMessage) {
+                    sendV2XMessage(data.SendV2XMessage);
+                }
+                else if (data.ReceiveV2XMessage) {
+                    receiveV2XMessage(data.ReceiveV2XMessage);
+                }
+                else if (data.AddedRsu) {
+                    addUnit(data.AddedRsu.applicationRsu);
+                }
+                else if (data.AddedTrafficLight) {
+                    addUnit(data.AddedTrafficLight.applicationTrafficLight);
+                }
+                else if (data.AddedChargingStation) {
+                    addUnit(data.AddedChargingStation.applicationChargingStation);
+                }
+                else if (data.ChargingStationUpdate) {
+                    updateChargingStation(data.ChargingStationUpdate.chargingStation);
+                }
+                else if (data.AddedVehicle) {
+                    updateEquippedUnits(data.AddedVehicle);
+                }
+            }
+        }
+
+        function socketOnClose() {
+            deleteAllMarkers();
+            WEBSOCKET_VISUALIZER.webSocket.close();
+        }
+
+        function WebSocketClient() {
+            WEBSOCKET_VISUALIZER.webSocket = new WebSocket("ws://localhost:46587");
+
+            WEBSOCKET_VISUALIZER.webSocket.onopen = socketOnOpen;
+            WEBSOCKET_VISUALIZER.webSocket.onmessage = socketOnMessage;
+            WEBSOCKET_VISUALIZER.webSocket.onclose = socketOnClose;
+        }
+
+        if (!("WebSocket" in window)) {
+            error = "Sorry, your Browser does not support WebSocket";
+            alert(error);
+            throw new Error(error);
+        } else {
+            setInterval(function(){WebSocketClient();}, 500);
+            google.maps.event.addDomListener(window, "load", initialize);
+        }
+
+</script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html>

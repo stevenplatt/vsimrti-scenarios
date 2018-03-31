@@ -1,0 +1,22 @@
+{
+	"localHosts" : [
+		{
+			"id" : "local",
+			"workingDirectory" : "./tmp",
+			"address" : "localhost",
+			"operatingSystem" : "linux"
+		}
+	],
+	"remoteHosts" : [
+		{
+			"id" : "remote",
+			"workingDirectory" : "/home/vsimrti/test/tmp",
+			"address" : "192.168.0.1",
+			"operatingSystem" : "linux",
+			"user" : "username",
+			"password" : "password",
+			"port" : 22
+		}
+	]
+}
+
