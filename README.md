@@ -1,6 +1,5 @@
-# vsimrti-scenarios
 VSimRTI v17 and Simulation Scenarios
-
+------------------------------------
 A central repository to hold vehicle network simulation data and scenario configuration.
 Custom application tests in JAR format will also be stored in this location.
 
