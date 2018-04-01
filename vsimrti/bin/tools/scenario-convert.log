@@ -7713,3 +7713,457 @@ netconvert errors:
   [end of errors]
 writing configuration information to: castelldefels.sumo.cfg
 finished
+initializing database
+loading database... 
+success
+
+start creating graph from database
+location index created in 0.012858722s, size:1 442, leafs:143, precision:300, depth:2, checksum:1084, entries:[64, 4], entriesPerLeaf:10.083916
+start finding subnetworks, totalMB:238, usedMB:27
+optimize to remove subnetworks (51), unvisited-dead-end-nodes (0), maxEdges/node (9)
+edges: 2023, nodes 1084, there were 51 subnetworks. removed them => 0 less nodes
+flushing graph car,bike|RAM|2D|turnCost|4,12,3,2,2, details:edges:2 023(1MB), nodes:1 084(1MB), name:(1MB), geo:6 985(1MB), bounds:1.9413184,2.0105583,41.2648837,41.2899367, totalMB:238, usedMB:27)
+generating routes...
+...finished generating routes
+exporting routes...
+    no routes found, skipping.
+writing routes information to: castelldefels.rou.xml
+finished
+Unknown option '--route-begin-node-id'
+
+
+com.sanityinc.jargs.CmdLineParser$UnknownOptionException: Unknown option '--route-begin-node-id'
+java.lang.IllegalArgumentException: com.sanityinc.jargs.CmdLineParser$UnknownOptionException: Unknown option '--route-begin-node-id'
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.c(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.a(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.core.Starter.main(Unknown Source) [scenario-convert-17.0.jar:na]
+Caused by: com.sanityinc.jargs.CmdLineParser$UnknownOptionException: Unknown option '--route-begin-node-id'
+	at com.sanityinc.jargs.CmdLineParser.parse(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	... 3 common frames omitted
+
+
+-------------------------------------------------------------------------------
+
+ This tool is used to create/update the database needed for the navigation
+ component of VSimRTI. The usual workflow can be seen in the examples below
+ and in the user documentation.
+
+-------------------------------------------------------------------------------
+
+ Usage: scenario-convert [OPERATION] -d <DATABASEFILE> [OPTIONS]*
+
+ Examples (options in [] are optional): 
+ 1. Import an osm file and write data into database
+  scenario-convert --osm2db -i <OSMFILE> [-o] [-d <DATABASE>]
+ 2. Export db content to sumo-readable files
+  scenario-convert --db2sumo -d <DATABASE> [-s <SUMOPREFIX>] [-n]
+ 3. Reimport a sumo routefile into a database
+  scenario-convert --sumo2db -d <DATABASE> -r <ROUTEFILE>
+ 4. Combine steps 1 and 2
+  scenario-convert --osm2sumo -d <DATABASE> -i <OSMFILE> [-s <SUMOPREFIX>]
+ 5. Convert an old database into the current format
+  scenario-convert --convert -i <OLD-DATABASE> [-d <TARGET-DATABASE>]
+ 6. Export db content to Shapefile format
+  scenario-convert --db2shp -d <DATABASE>
+ 7. Import an srtm file and write elevation data to nodes of an existing database
+  scenario-convert --srtm2db -i <SRTMFILE> -d <DATABASE>
+
+-------------------------------------------------------------------------------
+
+ CONFIGURATION FILE:
+ -c, --config-file FILE        Optional, refers to a configuration file which
+                               contains all parameters in JSON format. Single
+                               options can be set by the following parameters.
+
+ OPERATIONS:
+ --osm2db -i [-o] [-d]         Imports an OSM file creating a new database.
+ --srtm2db -i [-d]             Imports an SRTM file creating a new database.
+ --db2sumo -d [-s] [-n] [-l]   Exports the network to SUMO node and edge files.
+ --sumo2db [-i] [-r -d]        Imports a SUMO Network/Routefile. Be aware that
+                               you have to re-export an imported network!
+ --osm2sumo                    Combination of osm2db and db2sumo.
+ --db2shp -d                   Exports the network into Shapefile format.
+ --osm2shp -d                  Combination of osm2db and db2shp.
+ --srtm2db -i -d               Imports an SRTM file and writes elevation data
+                               to nodes.
+ --convert -i [-d]             Converts a database to the current format.
+
+
+ CONFIGURATION OPTIONS:
+ -i, --input-file FILE         Defines an input file to use in an import.
+                               File type is dependend on the import operation.
+                               (OSM File/Database file/SUMO net file)
+ -d, --database FILE           When importing: file to import to. Either omit
+                               the file extension or set it to '.db'.
+                               For export operations: file to load from.
+ -s, --sumo-prefix SUMOPREFIX  Prefix for the generated sumo files
+                               (uses database name when not defined).
+ --import-zone                 UTM zone of location for projecting coords in
+                               default format (e.g. 32n).
+ --import-lon/--import-lat     center longitude/latitude of imported region
+                               to project coordinates.
+                               ATTENTION: Zone and coordinate parameters are
+                               mutually exclusive alternatives!
+ -r, --route-file FILE         Sumo *.rou.xml file location
+ --export-routes               Export existing route data to *.rou.xml
+                               (only in combination with db2sumo).
+ -f, --force                   Force overwrite of existing files
+                               (do not increment file names).
+
+
+INTERNAL ROUTE GENERATION
+  (If you use this, a route file containing these routes will be generated too)
+ -g, --generate-routes         Generate routes based on the given options.
+                               Please see below for possible options,
+                               You will at least need start and end coordinates
+ Start of route: 
+ --route-begin-lat             Latitude of point, needs longitude defined!
+ --route-begin-lon             Longitude of point, needs latitude defined!
+ --route-begin-latlon          Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-start-node-id         OSM node id as start point
+                               (this is an alternative to the options above!)
+ End of route: 
+ --route-end-lat               Latitude of point, needs longitude defined!
+ --route-end-lon               Longitude of point, needs latitude defined!
+ --route-end-latlon            Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-end-node-id           OSM node id as start point
+                               (this is an alternative to the options above!)
+
+ --number-of-routes INT        Optional, limits the maximum number of generated
+                               routes. Default is 1.
+
+ ADDITIONAL TOOLS
+ -o, --execute-osmosis         Execute osmosis to apply automatic filters to 
+                               the given osm file (only for osm2xxx).
+ -b, --import-buildings        Write osm building information in database
+ --ignore-turn-restrictions    Ignore all defined turn restrictions on OSM import.
+ --disable-graph-cleanup       Turns off the removal of unconnected parts from the
+                               main traffic network graph. Since several components of
+                               VSimRTI require one main graph without disconnected ways
+                               and nodes, this option should be used only if the
+                               cleanup procedure is faulty.
+ -n, --execute-netconvert      Automatically start sumo netconvert after export
+                               to create netfile (only with xxx2sumo)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ --osm-speeds-file             Define a property file which contains speed information
+                               which are used to set the speed for OSM ways without a
+                               max speed tag. (only with osm2xxx) 
+ --osm-speeds-overwrite        If set to true, the maxspeed tags of ways are ignored and
+                               replaced by either default values, or by speed information
+                               defined via the --osm-speeds-file option. (only with osm2xxx)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ -v, --version                 Print current version number
+
+-------------------------------------------------------------------------------
+
+ File placement:
+   When a database file is given with -d every created file will be placed by
+   the database file in the given path. When the file is passed without a path 
+   the path used to execute the command from will be used as a base.
+   For import operations where -d is omited all files will be placed alongside 
+   the input file given.
+
+   When a file to be created already exist the filename will be postfixed with
+   an incrementing number. This behaviour can be overwritten
+
+-------------------------------------------------------------------------------
+
+Illegal option: 'u' in '-number-of-route'
+
+
+com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-route'
+java.lang.IllegalArgumentException: com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-route'
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.c(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.a(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.core.Starter.main(Unknown Source) [scenario-convert-17.0.jar:na]
+Caused by: com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-route'
+	at com.sanityinc.jargs.CmdLineParser.parse(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	... 3 common frames omitted
+
+
+-------------------------------------------------------------------------------
+
+ This tool is used to create/update the database needed for the navigation
+ component of VSimRTI. The usual workflow can be seen in the examples below
+ and in the user documentation.
+
+-------------------------------------------------------------------------------
+
+ Usage: scenario-convert [OPERATION] -d <DATABASEFILE> [OPTIONS]*
+
+ Examples (options in [] are optional): 
+ 1. Import an osm file and write data into database
+  scenario-convert --osm2db -i <OSMFILE> [-o] [-d <DATABASE>]
+ 2. Export db content to sumo-readable files
+  scenario-convert --db2sumo -d <DATABASE> [-s <SUMOPREFIX>] [-n]
+ 3. Reimport a sumo routefile into a database
+  scenario-convert --sumo2db -d <DATABASE> -r <ROUTEFILE>
+ 4. Combine steps 1 and 2
+  scenario-convert --osm2sumo -d <DATABASE> -i <OSMFILE> [-s <SUMOPREFIX>]
+ 5. Convert an old database into the current format
+  scenario-convert --convert -i <OLD-DATABASE> [-d <TARGET-DATABASE>]
+ 6. Export db content to Shapefile format
+  scenario-convert --db2shp -d <DATABASE>
+ 7. Import an srtm file and write elevation data to nodes of an existing database
+  scenario-convert --srtm2db -i <SRTMFILE> -d <DATABASE>
+
+-------------------------------------------------------------------------------
+
+ CONFIGURATION FILE:
+ -c, --config-file FILE        Optional, refers to a configuration file which
+                               contains all parameters in JSON format. Single
+                               options can be set by the following parameters.
+
+ OPERATIONS:
+ --osm2db -i [-o] [-d]         Imports an OSM file creating a new database.
+ --srtm2db -i [-d]             Imports an SRTM file creating a new database.
+ --db2sumo -d [-s] [-n] [-l]   Exports the network to SUMO node and edge files.
+ --sumo2db [-i] [-r -d]        Imports a SUMO Network/Routefile. Be aware that
+                               you have to re-export an imported network!
+ --osm2sumo                    Combination of osm2db and db2sumo.
+ --db2shp -d                   Exports the network into Shapefile format.
+ --osm2shp -d                  Combination of osm2db and db2shp.
+ --srtm2db -i -d               Imports an SRTM file and writes elevation data
+                               to nodes.
+ --convert -i [-d]             Converts a database to the current format.
+
+
+ CONFIGURATION OPTIONS:
+ -i, --input-file FILE         Defines an input file to use in an import.
+                               File type is dependend on the import operation.
+                               (OSM File/Database file/SUMO net file)
+ -d, --database FILE           When importing: file to import to. Either omit
+                               the file extension or set it to '.db'.
+                               For export operations: file to load from.
+ -s, --sumo-prefix SUMOPREFIX  Prefix for the generated sumo files
+                               (uses database name when not defined).
+ --import-zone                 UTM zone of location for projecting coords in
+                               default format (e.g. 32n).
+ --import-lon/--import-lat     center longitude/latitude of imported region
+                               to project coordinates.
+                               ATTENTION: Zone and coordinate parameters are
+                               mutually exclusive alternatives!
+ -r, --route-file FILE         Sumo *.rou.xml file location
+ --export-routes               Export existing route data to *.rou.xml
+                               (only in combination with db2sumo).
+ -f, --force                   Force overwrite of existing files
+                               (do not increment file names).
+
+
+INTERNAL ROUTE GENERATION
+  (If you use this, a route file containing these routes will be generated too)
+ -g, --generate-routes         Generate routes based on the given options.
+                               Please see below for possible options,
+                               You will at least need start and end coordinates
+ Start of route: 
+ --route-begin-lat             Latitude of point, needs longitude defined!
+ --route-begin-lon             Longitude of point, needs latitude defined!
+ --route-begin-latlon          Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-start-node-id         OSM node id as start point
+                               (this is an alternative to the options above!)
+ End of route: 
+ --route-end-lat               Latitude of point, needs longitude defined!
+ --route-end-lon               Longitude of point, needs latitude defined!
+ --route-end-latlon            Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-end-node-id           OSM node id as start point
+                               (this is an alternative to the options above!)
+
+ --number-of-routes INT        Optional, limits the maximum number of generated
+                               routes. Default is 1.
+
+ ADDITIONAL TOOLS
+ -o, --execute-osmosis         Execute osmosis to apply automatic filters to 
+                               the given osm file (only for osm2xxx).
+ -b, --import-buildings        Write osm building information in database
+ --ignore-turn-restrictions    Ignore all defined turn restrictions on OSM import.
+ --disable-graph-cleanup       Turns off the removal of unconnected parts from the
+                               main traffic network graph. Since several components of
+                               VSimRTI require one main graph without disconnected ways
+                               and nodes, this option should be used only if the
+                               cleanup procedure is faulty.
+ -n, --execute-netconvert      Automatically start sumo netconvert after export
+                               to create netfile (only with xxx2sumo)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ --osm-speeds-file             Define a property file which contains speed information
+                               which are used to set the speed for OSM ways without a
+                               max speed tag. (only with osm2xxx) 
+ --osm-speeds-overwrite        If set to true, the maxspeed tags of ways are ignored and
+                               replaced by either default values, or by speed information
+                               defined via the --osm-speeds-file option. (only with osm2xxx)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ -v, --version                 Print current version number
+
+-------------------------------------------------------------------------------
+
+ File placement:
+   When a database file is given with -d every created file will be placed by
+   the database file in the given path. When the file is passed without a path 
+   the path used to execute the command from will be used as a base.
+   For import operations where -d is omited all files will be placed alongside 
+   the input file given.
+
+   When a file to be created already exist the filename will be postfixed with
+   an incrementing number. This behaviour can be overwritten
+
+-------------------------------------------------------------------------------
+
+Illegal option: 'u' in '-number-of-routes'
+
+
+com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-routes'
+java.lang.IllegalArgumentException: com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-routes'
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.c(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.config.a.a(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	at com.dcaiti.vsimrti.tools.scenarioconvert.core.Starter.main(Unknown Source) [scenario-convert-17.0.jar:na]
+Caused by: com.sanityinc.jargs.CmdLineParser$UnknownSuboptionException: Illegal option: 'u' in '-number-of-routes'
+	at com.sanityinc.jargs.CmdLineParser.parse(Unknown Source) ~[scenario-convert-17.0.jar:na]
+	... 3 common frames omitted
+
+
+-------------------------------------------------------------------------------
+
+ This tool is used to create/update the database needed for the navigation
+ component of VSimRTI. The usual workflow can be seen in the examples below
+ and in the user documentation.
+
+-------------------------------------------------------------------------------
+
+ Usage: scenario-convert [OPERATION] -d <DATABASEFILE> [OPTIONS]*
+
+ Examples (options in [] are optional): 
+ 1. Import an osm file and write data into database
+  scenario-convert --osm2db -i <OSMFILE> [-o] [-d <DATABASE>]
+ 2. Export db content to sumo-readable files
+  scenario-convert --db2sumo -d <DATABASE> [-s <SUMOPREFIX>] [-n]
+ 3. Reimport a sumo routefile into a database
+  scenario-convert --sumo2db -d <DATABASE> -r <ROUTEFILE>
+ 4. Combine steps 1 and 2
+  scenario-convert --osm2sumo -d <DATABASE> -i <OSMFILE> [-s <SUMOPREFIX>]
+ 5. Convert an old database into the current format
+  scenario-convert --convert -i <OLD-DATABASE> [-d <TARGET-DATABASE>]
+ 6. Export db content to Shapefile format
+  scenario-convert --db2shp -d <DATABASE>
+ 7. Import an srtm file and write elevation data to nodes of an existing database
+  scenario-convert --srtm2db -i <SRTMFILE> -d <DATABASE>
+
+-------------------------------------------------------------------------------
+
+ CONFIGURATION FILE:
+ -c, --config-file FILE        Optional, refers to a configuration file which
+                               contains all parameters in JSON format. Single
+                               options can be set by the following parameters.
+
+ OPERATIONS:
+ --osm2db -i [-o] [-d]         Imports an OSM file creating a new database.
+ --srtm2db -i [-d]             Imports an SRTM file creating a new database.
+ --db2sumo -d [-s] [-n] [-l]   Exports the network to SUMO node and edge files.
+ --sumo2db [-i] [-r -d]        Imports a SUMO Network/Routefile. Be aware that
+                               you have to re-export an imported network!
+ --osm2sumo                    Combination of osm2db and db2sumo.
+ --db2shp -d                   Exports the network into Shapefile format.
+ --osm2shp -d                  Combination of osm2db and db2shp.
+ --srtm2db -i -d               Imports an SRTM file and writes elevation data
+                               to nodes.
+ --convert -i [-d]             Converts a database to the current format.
+
+
+ CONFIGURATION OPTIONS:
+ -i, --input-file FILE         Defines an input file to use in an import.
+                               File type is dependend on the import operation.
+                               (OSM File/Database file/SUMO net file)
+ -d, --database FILE           When importing: file to import to. Either omit
+                               the file extension or set it to '.db'.
+                               For export operations: file to load from.
+ -s, --sumo-prefix SUMOPREFIX  Prefix for the generated sumo files
+                               (uses database name when not defined).
+ --import-zone                 UTM zone of location for projecting coords in
+                               default format (e.g. 32n).
+ --import-lon/--import-lat     center longitude/latitude of imported region
+                               to project coordinates.
+                               ATTENTION: Zone and coordinate parameters are
+                               mutually exclusive alternatives!
+ -r, --route-file FILE         Sumo *.rou.xml file location
+ --export-routes               Export existing route data to *.rou.xml
+                               (only in combination with db2sumo).
+ -f, --force                   Force overwrite of existing files
+                               (do not increment file names).
+
+
+INTERNAL ROUTE GENERATION
+  (If you use this, a route file containing these routes will be generated too)
+ -g, --generate-routes         Generate routes based on the given options.
+                               Please see below for possible options,
+                               You will at least need start and end coordinates
+ Start of route: 
+ --route-begin-lat             Latitude of point, needs longitude defined!
+ --route-begin-lon             Longitude of point, needs latitude defined!
+ --route-begin-latlon          Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-start-node-id         OSM node id as start point
+                               (this is an alternative to the options above!)
+ End of route: 
+ --route-end-lat               Latitude of point, needs longitude defined!
+ --route-end-lon               Longitude of point, needs latitude defined!
+ --route-end-latlon            Combined value in format [latitude],[longitude]
+                               (this is an alternative to separate definition!)
+ --route-end-node-id           OSM node id as start point
+                               (this is an alternative to the options above!)
+
+ --number-of-routes INT        Optional, limits the maximum number of generated
+                               routes. Default is 1.
+
+ ADDITIONAL TOOLS
+ -o, --execute-osmosis         Execute osmosis to apply automatic filters to 
+                               the given osm file (only for osm2xxx).
+ -b, --import-buildings        Write osm building information in database
+ --ignore-turn-restrictions    Ignore all defined turn restrictions on OSM import.
+ --disable-graph-cleanup       Turns off the removal of unconnected parts from the
+                               main traffic network graph. Since several components of
+                               VSimRTI require one main graph without disconnected ways
+                               and nodes, this option should be used only if the
+                               cleanup procedure is faulty.
+ -n, --execute-netconvert      Automatically start sumo netconvert after export
+                               to create netfile (only with xxx2sumo)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ --osm-speeds-file             Define a property file which contains speed information
+                               which are used to set the speed for OSM ways without a
+                               max speed tag. (only with osm2xxx) 
+ --osm-speeds-overwrite        If set to true, the maxspeed tags of ways are ignored and
+                               replaced by either default values, or by speed information
+                               defined via the --osm-speeds-file option. (only with osm2xxx)
+ -l, --export-traffic-lights   export traffic light information for nodes
+ -v, --version                 Print current version number
+
+-------------------------------------------------------------------------------
+
+ File placement:
+   When a database file is given with -d every created file will be placed by
+   the database file in the given path. When the file is passed without a path 
+   the path used to execute the command from will be used as a base.
+   For import operations where -d is omited all files will be placed alongside 
+   the input file given.
+
+   When a file to be created already exist the filename will be postfixed with
+   an incrementing number. This behaviour can be overwritten
+
+-------------------------------------------------------------------------------
+
+initializing database
+loading database... 
+success
+
+start creating graph from database
+location index created in 0.016613098s, size:1 442, leafs:143, precision:300, depth:2, checksum:1084, entries:[64, 4], entriesPerLeaf:10.083916
+start finding subnetworks, totalMB:238, usedMB:27
+optimize to remove subnetworks (51), unvisited-dead-end-nodes (0), maxEdges/node (9)
+edges: 2023, nodes 1084, there were 51 subnetworks. removed them => 0 less nodes
+flushing graph car,bike|RAM|2D|turnCost|4,12,3,2,2, details:edges:2 023(1MB), nodes:1 084(1MB), name:(1MB), geo:6 985(1MB), bounds:1.9413184,2.0105583,41.2648837,41.2899367, totalMB:238, usedMB:27)
+generating routes...
+...finished generating routes
+exporting routes...
+writing routes information to: castelldefels.rou-0.xml
+finished
