@@ -1,0 +1,1291 @@
+﻿<?xml version="1.0"?>
+<osm generator="Merkaartor 0.16" version="0.6">
+  <node version="7" lon="13.31674572" lat="52.51128899" timestamp="2010-01-09T08:59:38Z" user="Elwood" id="26704526" actor="0">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.32032790" lat="52.51253490" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26938223" actor="2"/>
+  <node version="5" lon="13.32075890" lat="52.51266810" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26938222" actor="2"/>
+  <node version="4" lon="13.32083840" lat="52.51254880" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938221" actor="2"/>
+  <node version="4" lon="13.32069940" lat="52.51239490" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938220" actor="2"/>
+  <node version="5" lon="13.32037540" lat="52.51239760" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938219" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.31725230" lat="52.51217800" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="26704482" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.31715740" lat="52.51231820" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26875018" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.32084780" lat="52.51243870" timestamp="2009-09-07T19:11:44Z" user="Spoony" id="251106773" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="4" lon="13.31988380" lat="52.51250220" timestamp="2009-03-21T10:58:44Z" user="Shmias" id="276365467" actor="2"/>
+  <node version="2" lon="13.32063130" lat="52.51258780" timestamp="2009-09-07T19:11:50Z" user="Spoony" id="251150123" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="4" lon="13.31930700" lat="52.51246440" timestamp="2009-03-21T10:58:44Z" user="Shmias" id="276365492" actor="2"/>
+  <node version="3" lon="13.32085780" lat="52.51266060" timestamp="2009-09-07T19:11:39Z" user="Spoony" id="197667550" actor="2"/>
+  <node version="4" lon="13.32094040" lat="52.51231180" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26785753" actor="2"/>
+  <node version="4" lon="13.32100850" lat="52.51223060" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26785752" actor="2"/>
+  <node version="3" lon="13.32114780" lat="52.51211390" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="21487147" actor="2"/>
+  <node version="4" lon="13.32185800" lat="52.51196210" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938208" actor="2"/>
+  <node version="5" lon="13.32226420" lat="52.51198840" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938209" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.32147620" lat="52.51200620" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="26704584" actor="2"/>
+  <node version="4" lon="13.32168460" lat="52.51314940" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="26704628" actor="2"/>
+  <node version="4" lon="13.32109520" lat="52.51293800" timestamp="2009-09-03T20:11:58Z" user="Konrad Aust" id="21487143" actor="2"/>
+  <node version="4" lon="13.32197100" lat="52.51315460" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="21487144" actor="2"/>
+  <node version="4" lon="13.32092960" lat="52.51277870" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="21487142" actor="2"/>
+  <node version="4" lon="13.32098020" lat="52.51285090" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938211" actor="2"/>
+  <node version="5" lon="13.32124080" lat="52.51301310" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938212" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.32184920" lat="52.51315820" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938213" actor="2"/>
+  <node version="3" lon="13.32149010" lat="52.51311040" timestamp="2009-09-03T20:12:22Z" user="Konrad Aust" id="251106770" actor="2"/>
+  <node version="6" lon="13.32251860" lat="52.51204900" timestamp="2009-09-07T19:11:53Z" user="Spoony" id="21487146" actor="2"/>
+  <node version="6" lon="13.32330400" lat="52.51256780" timestamp="2009-09-07T19:11:42Z" user="Spoony" id="26938204" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.32303720" lat="52.51243900" timestamp="2009-09-07T19:11:52Z" user="Spoony" id="21487168" actor="2"/>
+  <node version="2" lon="13.32276160" lat="52.51217850" timestamp="2009-09-07T19:11:39Z" user="Spoony" id="281787666" actor="2"/>
+  <node version="2" lon="13.32287140" lat="52.51228170" timestamp="2009-09-07T19:11:39Z" user="Spoony" id="281787664" actor="2"/>
+  <node version="8" lon="13.32268010" lat="52.51303750" timestamp="2008-11-26T10:36:40Z" user="Divjo" id="21487148" actor="2"/>
+  <node version="10" lon="13.32298770" lat="52.51281220" timestamp="2008-11-26T10:36:40Z" user="Divjo" id="21487145" actor="2"/>
+  <node version="5" lon="13.32232830" lat="52.51312950" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938214" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="11" lon="13.32278280" lat="52.51297260" timestamp="2008-11-26T10:36:41Z" user="Divjo" id="26938215" actor="2"/>
+  <node version="6" lon="13.32306450" lat="52.51261750" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="26938217" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="10" lon="13.32326260" lat="52.51274930" timestamp="2009-06-05T02:53:57Z" user="iONiX" id="26938203" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.32364470" lat="52.51261540" timestamp="2009-09-07T19:11:52Z" user="Spoony" id="21487167" actor="2"/>
+  <node version="2" lon="13.32251710" lat="52.51308660" timestamp="2009-09-07T19:11:50Z" user="Spoony" id="251150120" actor="2"/>
+  <node version="3" lon="13.32347160" lat="52.51259810" timestamp="2009-09-07T19:11:50Z" user="Spoony" id="251150126" actor="2"/>
+  <node version="2" lon="13.32347350" lat="52.51273710" timestamp="2009-06-18T14:20:22Z" user="Xanadu" id="415838100" actor="2"/>
+  <node version="3" lon="13.32534040" lat="52.51272340" timestamp="2009-06-18T14:20:22Z" user="Xanadu" id="272365223" actor="2"/>
+  <node version="2" lon="13.32576400" lat="52.51287930" timestamp="2009-06-18T14:20:22Z" user="Xanadu" id="411091943" actor="2"/>
+  <node version="3" lon="13.32437600" lat="52.51279310" timestamp="2009-09-07T19:11:41Z" user="Spoony" id="290001020" actor="2"/>
+  <node version="2" lon="13.32700900" lat="52.51283010" timestamp="2009-06-18T14:20:22Z" user="Xanadu" id="408194194" actor="2"/>
+  <node version="2" lon="13.32698270" lat="52.51295620" timestamp="2009-06-18T14:20:22Z" user="Xanadu" id="408194192" actor="2"/>
+  <node version="7" lon="13.32850660" lat="52.51294740" timestamp="2009-11-04T14:03:12Z" user="Kartenmacher" id="26738489" actor="2"/>
+  <node version="2" lon="13.32683270" lat="52.51294560" timestamp="2009-06-18T13:32:24Z" user="Xanadu" id="415838099" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.32798810" lat="52.51303580" timestamp="2009-11-04T14:03:12Z" user="Kartenmacher" id="410846037" actor="2"/>
+  <node version="3" lon="13.32686070" lat="52.51282020" timestamp="2009-05-20T13:22:01Z" user="Xanadu" id="272256206" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.32737190" lat="52.51298700" timestamp="2009-11-04T14:03:05Z" user="Kartenmacher" id="408194217" actor="2"/>
+  <node version="1" lon="13.32671150" lat="52.51293810" timestamp="2009-06-24T14:10:05Z" user="Xanadu" id="428788320" actor="2"/>
+  <node version="1" lon="13.32673410" lat="52.51281210" timestamp="2009-06-24T14:10:05Z" user="Xanadu" id="428788319" actor="2"/>
+  <node version="2" lon="13.33017310" lat="52.51307960" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="423839224" actor="2"/>
+  <node version="2" lon="13.33014070" lat="52.51321320" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="423839225" actor="2"/>
+  <node version="3" lon="13.32997220" lat="52.51319290" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="408194196" actor="2"/>
+  <node version="4" lon="13.33162750" lat="52.51317280" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="252864801" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.33143630" lat="52.51315960" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="27537749" actor="2"/>
+  <node version="6" lon="13.33046590" lat="52.51323690" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="27537747" actor="2"/>
+  <node version="6" lon="13.33028590" lat="52.51308540" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="26704448" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="10" lon="13.33024550" lat="52.51322290" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="26704447" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.33051790" lat="52.51310070" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="27537750" actor="2"/>
+  <node version="4" lon="13.33008720" lat="52.51307130" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="313006383" actor="2"/>
+  <node version="6" lon="13.33160460" lat="52.51331580" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="21668930" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.33141400" lat="52.51330310" timestamp="2009-10-09T14:44:07Z" user="Elwood" id="27537748" actor="2"/>
+  <node version="4" lon="13.33570720" lat="52.51342050" timestamp="2009-10-09T14:44:09Z" user="Elwood" id="252864802" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.33639730" lat="52.51349460" timestamp="2009-10-25T17:38:41Z" user="Elwood" id="248919692" actor="2"/>
+  <node version="4" lon="13.33232570" lat="52.51321300" timestamp="2009-10-09T14:44:08Z" user="Elwood" id="265786533" actor="2"/>
+  <node version="6" lon="13.33569930" lat="52.51358730" timestamp="2009-10-09T14:44:09Z" user="Elwood" id="21677261" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.33629590" lat="52.51348480" timestamp="2009-10-25T17:38:41Z" user="Elwood" id="341364279" actor="2"/>
+  <node version="2" lon="13.34799670" lat="52.51443800" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="282745683" actor="2"/>
+  <node version="6" lon="13.33798160" lat="52.51374870" timestamp="2009-10-09T14:44:10Z" user="Elwood" id="27011311" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="7" lon="13.33800400" lat="52.51360520" timestamp="2009-10-25T17:31:06Z" user="Elwood" id="27011308" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.34832590" lat="52.51431280" timestamp="2009-10-25T17:34:37Z" user="Elwood" id="27011305" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="2" lon="13.34167440" lat="52.51400050" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="341364267" actor="2"/>
+  <node version="2" lon="13.34168930" lat="52.51384610" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="341364270" actor="2"/>
+  <node version="6" lon="13.33774270" lat="52.51358800" timestamp="2009-10-25T17:38:41Z" user="Elwood" id="82654385" actor="2"/>
+  <node version="3" lon="13.34464590" lat="52.51420690" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="271749621" actor="2"/>
+  <node version="2" lon="13.33999640" lat="52.51373110" timestamp="2009-10-25T17:31:46Z" user="Elwood" id="341364277" actor="2"/>
+  <node version="5" lon="13.34950480" lat="52.51395980" timestamp="2009-07-19T11:39:07Z" user="TobHaeg" id="27423744" actor="2"/>
+  <node version="5" lon="13.34965450" lat="52.51389810" timestamp="2009-07-19T11:39:07Z" user="TobHaeg" id="27011241" actor="2"/>
+  <node version="6" lon="13.34847860" lat="52.51446800" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="27011219" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.34926900" lat="52.51412470" timestamp="2009-04-13T15:05:17Z" user="anbr" id="21487170" actor="2"/>
+  <node version="5" lon="13.34939700" lat="52.51402130" timestamp="2009-07-19T11:38:27Z" user="TobHaeg" id="27011237" actor="2"/>
+  <node version="8" lon="13.34914790" lat="52.51430880" timestamp="2009-12-18T11:02:23Z" user="1248" id="27011229" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="2" lon="13.34893910" lat="52.51425460" timestamp="2009-10-25T17:34:37Z" user="Elwood" id="281787657" actor="2"/>
+  <node version="2" lon="13.34873920" lat="52.51431360" timestamp="2009-10-25T17:34:37Z" user="Elwood" id="281787656" actor="2"/>
+  <node version="4" lon="13.34911900" lat="52.51447520" timestamp="2009-04-13T15:05:17Z" user="anbr" id="281787658" actor="2"/>
+  <node version="3" lon="13.34866130" lat="52.51451500" timestamp="2009-10-25T17:34:37Z" user="Elwood" id="281787659" actor="2"/>
+  <node version="3" lon="13.34891360" lat="52.51458960" timestamp="2009-10-25T17:34:37Z" user="Elwood" id="281787660" actor="2"/>
+  <node version="1" lon="13.34855090" lat="52.51432750" timestamp="2009-10-25T17:34:36Z" user="Elwood" id="540312558" actor="2"/>
+  <node version="5" lon="13.35000790" lat="52.51382450" timestamp="2009-09-07T19:11:52Z" user="Spoony" id="26703663" actor="2"/>
+  <node version="5" lon="13.35040190" lat="52.51383630" timestamp="2009-09-07T19:11:52Z" user="Spoony" id="21487176" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.35069370" lat="52.51389520" timestamp="2009-07-19T11:39:08Z" user="TobHaeg" id="21487175" actor="2"/>
+  <node version="1" lon="13.34982230" lat="52.51384660" timestamp="2008-09-22T18:09:24Z" user="Elwood" id="299080425" actor="2"/>
+  <node version="1" lon="13.35020680" lat="52.51381220" timestamp="2008-09-22T18:09:24Z" user="Elwood" id="299080426" actor="2"/>
+  <node version="3" lon="13.35084520" lat="52.51397100" timestamp="2009-07-19T11:38:38Z" user="TobHaeg" id="197687090" actor="2"/>
+  <node version="5" lon="13.35106660" lat="52.51413260" timestamp="2009-07-19T11:39:05Z" user="TobHaeg" id="27011231" actor="2"/>
+  <node version="1" lon="13.35096770" lat="52.51404280" timestamp="2009-02-07T09:24:18Z" user="TheBo" id="342813080" actor="2"/>
+  <node version="6" lon="13.35120910" lat="52.51443570" timestamp="2009-04-13T15:05:13Z" user="anbr" id="27011806" actor="2"/>
+  <node version="7" lon="13.35116490" lat="52.51426980" timestamp="2009-04-13T15:05:12Z" user="anbr" id="21487174" actor="2"/>
+  <node version="3" lon="13.35155080" lat="52.51445890" timestamp="2009-07-19T13:54:10Z" user="TobHaeg" id="27011256" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.35116250" lat="52.51464590" timestamp="2009-12-18T11:02:24Z" user="1248" id="281788931" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="3" lon="13.35134500" lat="52.51435730" timestamp="2009-03-09T17:12:39Z" user="anbr" id="27011842" actor="2"/>
+  <node version="4" lon="13.35190490" lat="52.51451390" timestamp="2009-03-09T17:12:40Z" user="anbr" id="26873451" actor="2"/>
+  <node version="1" lon="13.35089930" lat="52.51490610" timestamp="2008-09-22T18:09:25Z" user="Elwood" id="299080432" actor="2"/>
+  <node version="1" lon="13.34943770" lat="52.51491660" timestamp="2009-12-18T11:02:22Z" user="1248" id="595589819" actor="2"/>
+  <node version="2" lon="13.35186550" lat="52.51465390" timestamp="2009-07-19T13:53:05Z" user="TobHaeg" id="21487178" actor="2"/>
+  <node version="6" lon="13.35107550" lat="52.51476530" timestamp="2009-04-13T15:05:13Z" user="anbr" id="21487173" actor="2"/>
+  <node version="5" lon="13.35011050" lat="52.51508910" timestamp="2008-09-22T18:09:30Z" user="Elwood" id="21487172" actor="2"/>
+  <node version="15" lon="13.34970140" lat="52.51502430" timestamp="2009-03-14T23:05:43Z" user="daniel46" id="21487171" actor="2"/>
+  <node version="6" lon="13.34917220" lat="52.51465510" timestamp="2009-04-13T15:05:17Z" user="anbr" id="21487169" actor="2"/>
+  <node version="3" lon="13.35147290" lat="52.51468010" timestamp="2009-07-19T13:52:56Z" user="TobHaeg" id="27011259" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.35072220" lat="52.51498620" timestamp="2009-09-07T19:11:51Z" user="Spoony" id="26703090" actor="2">
+    <tag k="ele" v="34.0"/>
+  </node>
+  <node version="5" lon="13.35052260" lat="52.51505130" timestamp="2008-09-22T18:09:29Z" user="Elwood" id="26703089" actor="2"/>
+  <node version="5" lon="13.35032580" lat="52.51508230" timestamp="2008-09-22T18:09:27Z" user="Elwood" id="27011222" actor="2"/>
+  <node version="9" lon="13.34929510" lat="52.51483030" timestamp="2009-12-18T11:02:25Z" user="1248" id="27011225" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="7" lon="13.34994140" lat="52.51507530" timestamp="2008-09-22T18:09:27Z" user="Elwood" id="27011227" actor="2"/>
+  <node version="1" lon="13.35635280" lat="52.51494130" timestamp="2008-06-17T18:36:14Z" user="Pholker" id="270964379" actor="2"/>
+  <node version="2" lon="13.34922290" lat="52.51475600" timestamp="2009-12-18T11:02:25Z" user="1248" id="342813075" actor="2"/>
+  <node version="2" lon="13.34955470" lat="52.51497080" timestamp="2009-12-18T11:02:25Z" user="1248" id="342813077" actor="2"/>
+  <node version="2" lon="13.35981340" lat="52.51501230" timestamp="2009-07-08T22:15:54Z" user="Xanadu" id="406585016" actor="2">
+    <tag k="crossing" v="island"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node version="3" lon="13.35974210" lat="52.51515280" timestamp="2009-07-19T13:54:19Z" user="TobHaeg" id="406584997" actor="2">
+    <tag k="crossing" v="island"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node version="1" lon="13.36026870" lat="52.51518550" timestamp="2009-06-02T19:52:11Z" user="RobertJ" id="414959598" actor="2">
+    <tag k="crossing" v="island"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node version="1" lon="13.36359510" lat="52.51540230" timestamp="2008-06-17T18:36:28Z" user="Pholker" id="270964430" actor="2"/>
+  <node version="1" lon="13.36204430" lat="52.51528930" timestamp="2008-06-17T18:36:29Z" user="Pholker" id="270964434" actor="2"/>
+  <node version="1" lon="13.36006380" lat="52.51517360" timestamp="2008-06-17T18:36:29Z" user="Pholker" id="270964435" actor="2"/>
+  <node version="1" lon="13.36028880" lat="52.51503380" timestamp="2009-06-02T19:52:12Z" user="RobertJ" id="414959615" actor="2">
+    <tag k="crossing" v="island"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node version="2" lon="13.35948180" lat="52.51514260" timestamp="2008-01-09T14:18:20Z" user="bahnpirat" id="213045012" actor="2"/>
+  <node version="6" lon="13.36623750" lat="52.51548450" timestamp="2009-11-15T15:02:17Z" user="Elwood" id="82654384" actor="2"/>
+  <node version="4" lon="13.36620180" lat="52.51558690" timestamp="2009-11-15T15:02:17Z" user="Elwood" id="270964315" actor="2"/>
+  <node version="5" lon="13.36987900" lat="52.51582790" timestamp="2009-09-08T16:46:19Z" user="Konrad Aust" id="26703689" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="5" lon="13.37008790" lat="52.51567210" timestamp="2009-03-09T17:12:40Z" user="anbr" id="152533555" actor="2"/>
+  <node version="3" lon="13.36961850" lat="52.51563870" timestamp="2009-03-09T17:12:40Z" user="anbr" id="249734328" actor="2"/>
+  <node version="1" lon="13.36894820" lat="52.51564970" timestamp="2009-11-15T15:02:16Z" user="Elwood" id="564738832" actor="2"/>
+  <node version="7" lon="13.36987570" lat="52.51566090" timestamp="2009-11-15T15:02:17Z" user="Elwood" id="26873453" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="1" lon="13.37392000" lat="52.51592290" timestamp="2009-05-06T19:22:34Z" user="RobertJ" id="391498256" actor="2"/>
+  <node version="1" lon="13.37199850" lat="52.51579700" timestamp="2009-06-08T22:01:12Z" user="RobertJ" id="417709064" actor="2"/>
+  <node version="3" lon="13.37400830" lat="52.51611540" timestamp="2009-11-15T15:02:17Z" user="Elwood" id="281167110" actor="2"/>
+  <node version="2" lon="13.37197140" lat="52.51597120" timestamp="2009-11-15T15:02:17Z" user="Elwood" id="489741699" actor="2"/>
+  <node version="4" lon="13.37735250" lat="52.51587890" timestamp="2008-10-30T12:15:10Z" user="fralfral" id="25661282" actor="2"/>
+  <node version="5" lon="13.37689740" lat="52.51591630" timestamp="2008-12-02T17:02:03Z" user="Islanit" id="26870692" actor="2"/>
+  <node version="7" lon="13.37720640" lat="52.51579100" timestamp="2008-12-02T17:02:03Z" user="Islanit" id="26870695" actor="2"/>
+  <node version="3" lon="13.37715510" lat="52.51595210" timestamp="2008-10-30T12:15:10Z" user="fralfral" id="26914395" actor="2"/>
+  <node version="8" lon="13.37693550" lat="52.51612700" timestamp="2009-07-19T13:53:43Z" user="TobHaeg" id="25661280" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.37669700" lat="52.51628930" timestamp="2009-11-15T15:02:18Z" user="Elwood" id="26870674" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="6" lon="13.37674070" lat="52.51610770" timestamp="2009-08-01T14:49:56Z" user="Gluko" id="26873454" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node version="4" lon="13.37688710" lat="52.51630130" timestamp="2009-11-26T12:21:09Z" user="gutrun" id="262454829" actor="2">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <way version="1" id="1">
+    <nd ref="26704526" />
+	<nd ref="26704482" />
+	<tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="34" timestamp="2009-11-15T15:06:45Z" user="Elwood" id="24240250" actor="2">
+    <nd ref="262454829"/>
+    <nd ref="26870674"/>
+    <nd ref="281167110"/>
+    <nd ref="489741699"/>
+    <nd ref="26703689"/>
+    <nd ref="270964315"/>
+    <nd ref="270964430"/>
+    <nd ref="270964434"/>
+    <nd ref="414959598"/>
+    <nd ref="270964435"/>
+    <nd ref="406584997"/>
+    <nd ref="213045012"/>
+    <nd ref="270964379"/>
+    <nd ref="21487178"/>
+    <nd ref="27011259"/>
+    <nd ref="21487173"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="23" timestamp="2009-11-15T15:02:18Z" user="Elwood" id="4397063" actor="2">
+    <nd ref="21487174"/>
+    <nd ref="27011842"/>
+    <nd ref="27011256"/>
+    <nd ref="26873451"/>
+    <nd ref="406585016"/>
+    <nd ref="414959615"/>
+    <nd ref="82654384"/>
+    <nd ref="564738832"/>
+    <nd ref="249734328"/>
+    <nd ref="26873453"/>
+    <nd ref="152533555"/>
+    <nd ref="417709064"/>
+    <nd ref="391498256"/>
+    <nd ref="26873454"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-10-24T15:57:48Z" user="Elwood" id="30806884" actor="2">
+    <nd ref="21487169"/>
+    <nd ref="281787658"/>
+    <nd ref="27011229"/>
+    <nd ref="21487170"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-10-24T16:00:19Z" user="Elwood" id="30806886" actor="2">
+    <nd ref="21487174"/>
+    <nd ref="27011806"/>
+    <nd ref="281788931"/>
+    <nd ref="21487173"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="16" timestamp="2010-01-09T14:34:55Z" user="geozeisig" id="4400154" actor="2">
+    <nd ref="21487169"/>
+    <nd ref="281787660"/>
+    <nd ref="281787659"/>
+    <nd ref="27011219"/>
+    <nd ref="282745683"/>
+    <nd ref="271749621"/>
+    <nd ref="341364267"/>
+    <nd ref="27011311"/>
+    <nd ref="21677261"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:00:45Z" user="HeikoE" id="32935479" actor="2">
+    <nd ref="252864802"/>
+    <nd ref="341364279"/>
+    <nd ref="248919692"/>
+    <nd ref="82654385"/>
+    <nd ref="27011308"/>
+    <nd ref="341364277"/>
+    <nd ref="341364270"/>
+    <nd ref="27011305"/>
+    <nd ref="540312558"/>
+    <nd ref="281787656"/>
+    <nd ref="281787657"/>
+    <nd ref="21487170"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10787"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="3" timestamp="2009-12-27T00:01:11Z" user="HeikoE" id="36337926" actor="2">
+    <nd ref="408194196"/>
+    <nd ref="410846037"/>
+    <nd ref="408194217"/>
+    <nd ref="408194192"/>
+    <nd ref="415838099"/>
+    <nd ref="428788320"/>
+    <nd ref="411091943"/>
+    <nd ref="290001020"/>
+    <nd ref="415838100"/>
+    <nd ref="26938203"/>
+    <nd ref="21487145"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bicycle" v="no"/>
+  </way>
+  <way version="15" timestamp="2009-12-27T00:00:46Z" user="HeikoE" id="4068038" actor="2">
+    <nd ref="21487168"/>
+    <nd ref="26938204"/>
+    <nd ref="251150126"/>
+    <nd ref="21487167"/>
+    <nd ref="272365223"/>
+    <nd ref="428788319"/>
+    <nd ref="272256206"/>
+    <nd ref="408194194"/>
+    <nd ref="26738489"/>
+    <nd ref="313006383"/>
+    <nd ref="423839224"/>
+    <nd ref="26704448"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bicycle" v="no"/>
+  </way>
+  <way version="12" timestamp="2009-12-27T00:00:47Z" user="HeikoE" id="4403977" actor="2">
+    <nd ref="21487144"/>
+    <nd ref="26938213"/>
+    <nd ref="26704628"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="1" timestamp="2009-06-18T14:20:21Z" user="Xanadu" id="36338285" actor="2">
+    <nd ref="415838100"/>
+    <nd ref="251150126"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="nat_ref" v="B2,B5"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:00:48Z" user="HeikoE" id="25185008" actor="2">
+    <nd ref="21487143"/>
+    <nd ref="26938211"/>
+    <nd ref="21487142"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:00:48Z" user="HeikoE" id="25184999" actor="2">
+    <nd ref="26704628"/>
+    <nd ref="251106770"/>
+    <nd ref="26938212"/>
+    <nd ref="21487143"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="7" timestamp="2009-12-27T00:01:05Z" user="HeikoE" id="25185006" actor="2">
+    <nd ref="21487146"/>
+    <nd ref="281787666"/>
+    <nd ref="281787664"/>
+    <nd ref="21487168"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="7" timestamp="2009-12-27T00:01:05Z" user="HeikoE" id="25185007" actor="2">
+    <nd ref="26704584"/>
+    <nd ref="26938208"/>
+    <nd ref="26938209"/>
+    <nd ref="21487146"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="5" timestamp="2009-08-01T14:46:48Z" user="Gluko" id="25185004" actor="2">
+    <nd ref="21487168"/>
+    <nd ref="26938217"/>
+    <nd ref="21487145"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:00:47Z" user="HeikoE" id="25185005" actor="2">
+    <nd ref="21487148"/>
+    <nd ref="251150120"/>
+    <nd ref="26938214"/>
+    <nd ref="21487144"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="4" timestamp="2009-08-01T14:46:05Z" user="Gluko" id="25185002" actor="2">
+    <nd ref="21487142"/>
+    <nd ref="197667550"/>
+    <nd ref="26938221"/>
+    <nd ref="251106773"/>
+    <nd ref="26785753"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:00:47Z" user="HeikoE" id="25185003" actor="2">
+    <nd ref="21487145"/>
+    <nd ref="26938215"/>
+    <nd ref="21487148"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-12-27T00:01:05Z" user="HeikoE" id="25185001" actor="2">
+    <nd ref="26785753"/>
+    <nd ref="26785752"/>
+    <nd ref="21487147"/>
+    <nd ref="26704584"/>
+    <tag k="osmarender:renderRef" v="no"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="postal_code" v="10587"/>
+    <tag k="name" v="Ernst-Reuter-Platz"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="2" timestamp="2009-12-27T00:01:05Z" user="HeikoE" id="32909782" actor="2">
+    <nd ref="26704482"/>
+    <nd ref="26938219"/>
+    <nd ref="26938220"/>
+    <nd ref="26785753"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10625"/>
+    <tag k="name" v="Bismarckstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="16" timestamp="2009-12-27T00:00:48Z" user="HeikoE" id="4400423" actor="2">
+    <nd ref="21487142"/>
+    <nd ref="26938222"/>
+    <nd ref="251150123"/>
+    <nd ref="26938223"/>
+    <nd ref="276365467"/>
+    <nd ref="276365492"/>
+    <nd ref="26875018"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10625"/>
+    <tag k="name" v="Bismarckstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="2" timestamp="2009-12-27T00:00:46Z" user="HeikoE" id="36337928" actor="2">
+    <nd ref="26704448"/>
+    <nd ref="27537750"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="1" timestamp="2009-06-18T14:15:15Z" user="Xanadu" id="36337929" actor="2">
+    <nd ref="423839224"/>
+    <nd ref="423839225"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="nat_ref" v="B2,B5"/>
+  </way>
+  <way version="15" timestamp="2009-12-27T00:00:46Z" user="HeikoE" id="4609243" actor="2">
+    <nd ref="27537749"/>
+    <nd ref="252864801"/>
+    <nd ref="265786533"/>
+    <nd ref="252864802"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="9" timestamp="2009-12-27T00:01:11Z" user="HeikoE" id="4609242" actor="2">
+    <nd ref="27537748"/>
+    <nd ref="27537747"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Charlottenburger Brücke"/>
+    <tag k="layer" v="1"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+  </way>
+  <way version="15" timestamp="2009-12-27T00:01:11Z" user="HeikoE" id="4609241" actor="2">
+    <nd ref="27537747"/>
+    <nd ref="26704447"/>
+    <nd ref="423839225"/>
+    <nd ref="408194196"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="6" timestamp="2009-06-18T14:15:16Z" user="Xanadu" id="4381557" actor="2">
+    <nd ref="26704447"/>
+    <nd ref="26704448"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+  </way>
+  <way version="9" timestamp="2009-12-27T00:00:46Z" user="HeikoE" id="4609244" actor="2">
+    <nd ref="27537750"/>
+    <nd ref="27537749"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Charlottenburger Brücke"/>
+    <tag k="layer" v="1"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+  </way>
+  <way version="3" timestamp="2009-11-28T08:44:27Z" user="toaster" id="23352699" actor="2">
+    <nd ref="21677261"/>
+    <nd ref="252864802"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+  </way>
+  <way version="2" timestamp="2009-10-24T15:57:48Z" user="Elwood" id="23352698" actor="2">
+    <nd ref="21668930"/>
+    <nd ref="252864801"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+  </way>
+  <way version="1" timestamp="2009-06-24T14:10:05Z" user="Xanadu" id="36878113" actor="2">
+    <nd ref="428788319"/>
+    <nd ref="428788320"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="nat_ref" v="B2,B5"/>
+  </way>
+  <way version="1" timestamp="2009-05-20T13:22:01Z" user="Xanadu" id="34835386" actor="2">
+    <nd ref="408194192"/>
+    <nd ref="408194194"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="nat_ref" v="B2,B5"/>
+  </way>
+  <way version="4" timestamp="2009-12-27T00:01:10Z" user="HeikoE" id="32935480" actor="2">
+    <nd ref="21677261"/>
+    <nd ref="21668930"/>
+    <nd ref="27537748"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="osmarender:renderName" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10623"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="19" timestamp="2009-07-19T11:39:49Z" user="TobHaeg" id="4413638" actor="2">
+    <nd ref="21487175"/>
+    <nd ref="197687090"/>
+    <nd ref="342813080"/>
+    <nd ref="27011231"/>
+    <nd ref="21487174"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10785"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="4" timestamp="2009-10-24T15:57:49Z" user="Elwood" id="30194724" actor="2">
+    <nd ref="299080425"/>
+    <nd ref="26703663"/>
+    <nd ref="299080426"/>
+    <nd ref="21487176"/>
+    <nd ref="21487175"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="3" timestamp="2009-10-24T15:57:49Z" user="Elwood" id="30806885" actor="2">
+    <nd ref="21487170"/>
+    <nd ref="27011237"/>
+    <nd ref="27423744"/>
+    <nd ref="27011241"/>
+    <nd ref="299080425"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="4" timestamp="2009-09-07T19:12:21Z" user="Spoony" id="30194725" actor="2">
+    <nd ref="21487173"/>
+    <nd ref="299080432"/>
+    <nd ref="26703090"/>
+    <nd ref="26703089"/>
+    <nd ref="27011222"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="7" timestamp="2009-12-18T11:02:26Z" user="1248" id="30194726" actor="2">
+    <nd ref="27011222"/>
+    <nd ref="21487172"/>
+    <nd ref="27011227"/>
+    <nd ref="21487171"/>
+    <nd ref="342813077"/>
+    <nd ref="595589819"/>
+    <nd ref="27011225"/>
+    <nd ref="342813075"/>
+    <nd ref="21487169"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="route" v="bus"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Großer Stern"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="4" timestamp="2009-11-15T15:02:20Z" user="Elwood" id="31962807" actor="2">
+    <nd ref="26703689"/>
+    <nd ref="26873453"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+  </way>
+  <way version="1" timestamp="2009-08-01T14:49:56Z" user="Gluko" id="38358261" actor="2">
+    <nd ref="26873454"/>
+    <nd ref="25661280"/>
+    <tag k="ref" v="B 2; B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10557"/>
+    <tag k="name" v="Straße des 17. Juni"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="9" timestamp="2009-07-19T13:55:56Z" user="TobHaeg" id="25973438" actor="2">
+    <nd ref="26870674"/>
+    <nd ref="26873454"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10117"/>
+    <tag k="name" v="Ebertstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="13" timestamp="2009-08-08T16:01:22Z" user="Konrad Aust" id="24242895" actor="2">
+    <nd ref="25661282"/>
+    <nd ref="26914395"/>
+    <nd ref="25661280"/>
+    <nd ref="262454829"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10117"/>
+    <tag k="name" v="Ebertstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way version="4" timestamp="2009-08-08T16:01:26Z" user="Konrad Aust" id="28764302" actor="2">
+    <nd ref="26873454"/>
+    <nd ref="26870692"/>
+    <nd ref="26870695"/>
+    <tag k="ref" v="B 2;B 5"/>
+    <tag k="highway" v="primary"/>
+    <tag k="postal_code" v="10117"/>
+    <tag k="name" v="Ebertstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <relation version="21" timestamp="2010-01-12T15:49:38Z" user="BudBundi" id="7888" actor="2">
+    <member role="country" type="relation" ref="16239"/>
+    <member role="country" type="relation" ref="16042"/>
+    <member role="country" type="relation" ref="16240"/>
+    <member role="country" type="relation" ref="16241"/>
+    <member role="country" type="relation" ref="51477"/>
+    <member role="country" type="relation" ref="16438"/>
+    <tag k="name:cs" v="Evropa"/>
+    <tag k="name:en" v="Europe"/>
+    <tag k="name:es" v="Europa"/>
+    <tag k="name:de" v="Europa"/>
+    <tag k="type" v="continent"/>
+    <tag k="TMC:cid_58:tabcd_1:LocationCode" v="34196"/>
+    <tag k="name:fr" v="Europe"/>
+    <tag k="name:it" v="Europa"/>
+    <tag k="TMC:cid_58:tabcd_1:LCLversion" v="8.00"/>
+    <tag k="name" v="Europe"/>
+    <tag k="name:hr" v="Europa"/>
+    <tag k="name:tr" v="Avrupa"/>
+    <tag k="name:sl" v="Evropa"/>
+    <tag k="TMC:cid_58:tabcd_1:Class" v="Area"/>
+  </relation>
+  <relation version="3" timestamp="2009-10-16T20:59:11Z" user="anbr" id="294761" actor="2">
+    <member role="" type="relation" ref="6162"/>
+    <member role="" type="relation" ref="294867"/>
+    <member role="" type="relation" ref="52459"/>
+    <member role="" type="relation" ref="14613"/>
+    <member role="" type="relation" ref="10114"/>
+    <tag k="route" v="bicycle"/>
+    <tag k="name" v="Radiale Radrouten in Berlin"/>
+    <tag k="type" v="route"/>
+    <tag k="operator" v="Senatsverwaltung für Stadtentwicklung Berlin"/>
+    <tag k="network" v="lcn"/>
+  </relation>
+  <relation version="17" timestamp="2009-08-30T17:40:43Z" user="Geogast" id="174283" actor="2">
+    <member role="" type="relation" ref="63605"/>
+    <member role="" type="relation" ref="52952"/>
+    <member role="" type="relation" ref="19000"/>
+    <member role="" type="relation" ref="27414"/>
+    <member role="" type="relation" ref="76982"/>
+    <member role="" type="relation" ref="86794"/>
+    <member role="" type="relation" ref="76983"/>
+    <member role="" type="relation" ref="17681"/>
+    <member role="" type="relation" ref="169972"/>
+    <member role="" type="relation" ref="76245"/>
+    <member role="" type="relation" ref="62927"/>
+    <member role="" type="relation" ref="63596"/>
+    <member role="" type="relation" ref="175136"/>
+    <member role="" type="relation" ref="223760"/>
+    <tag k="name" v="MetroBus-Linien in Berlin"/>
+    <tag k="type" v="network"/>
+    <tag k="operator" v="BVG"/>
+    <tag k="network" v="VBB"/>
+  </relation>
+  <relation version="155" timestamp="2010-01-13T21:33:52Z" user="HeikoE" id="31495" actor="2">
+    <member role="" type="relation" ref="5003"/>
+    <member role="" type="relation" ref="271677"/>
+    <member role="" type="relation" ref="30453"/>
+    <member role="" type="relation" ref="21329"/>
+    <member role="" type="relation" ref="28500"/>
+    <member role="" type="relation" ref="18151"/>
+    <member role="" type="relation" ref="19610"/>
+    <member role="" type="relation" ref="19798"/>
+    <member role="" type="relation" ref="4388"/>
+    <member role="" type="relation" ref="18558"/>
+    <member role="" type="relation" ref="20373"/>
+    <member role="" type="relation" ref="20431"/>
+    <member role="" type="relation" ref="61973"/>
+    <member role="" type="relation" ref="20496"/>
+    <member role="" type="relation" ref="19260"/>
+    <member role="" type="relation" ref="17946"/>
+    <member role="" type="relation" ref="17945"/>
+    <member role="" type="relation" ref="17966"/>
+    <member role="" type="relation" ref="17983"/>
+    <member role="" type="relation" ref="17989"/>
+    <member role="" type="relation" ref="18010"/>
+    <member role="" type="relation" ref="4788"/>
+    <member role="" type="relation" ref="31584"/>
+    <member role="" type="relation" ref="20127"/>
+    <member role="" type="relation" ref="53896"/>
+    <member role="" type="relation" ref="21119"/>
+    <member role="" type="relation" ref="26579"/>
+    <member role="" type="relation" ref="17886"/>
+    <member role="" type="relation" ref="17902"/>
+    <member role="" type="relation" ref="20884"/>
+    <member role="" type="relation" ref="20956"/>
+    <member role="" type="relation" ref="21094"/>
+    <member role="" type="relation" ref="21169"/>
+    <member role="" type="relation" ref="21250"/>
+    <member role="" type="relation" ref="61970"/>
+    <member role="" type="relation" ref="61483"/>
+    <member role="" type="relation" ref="61613"/>
+    <member role="" type="relation" ref="61617"/>
+    <member role="" type="relation" ref="59503"/>
+    <member role="" type="relation" ref="61666"/>
+    <member role="" type="relation" ref="61680"/>
+    <member role="" type="relation" ref="61930"/>
+    <member role="" type="relation" ref="36608"/>
+    <member role="" type="relation" ref="22679"/>
+    <member role="" type="relation" ref="28405"/>
+    <member role="" type="relation" ref="34222"/>
+    <member role="" type="relation" ref="50036"/>
+    <member role="" type="relation" ref="28297"/>
+    <member role="" type="relation" ref="35222"/>
+    <member role="" type="relation" ref="21498"/>
+    <member role="" type="relation" ref="28331"/>
+    <member role="" type="relation" ref="22690"/>
+    <member role="" type="relation" ref="57601"/>
+    <member role="" type="relation" ref="57604"/>
+    <member role="" type="relation" ref="21932"/>
+    <member role="" type="relation" ref="57775"/>
+    <member role="" type="relation" ref="21352"/>
+    <member role="" type="relation" ref="21344"/>
+    <member role="" type="relation" ref="57783"/>
+    <member role="" type="relation" ref="30452"/>
+    <member role="" type="relation" ref="35960"/>
+    <member role="" type="relation" ref="34157"/>
+    <member role="" type="relation" ref="32598"/>
+    <member role="" type="relation" ref="22918"/>
+    <member role="" type="relation" ref="21454"/>
+    <member role="" type="relation" ref="51857"/>
+    <member role="" type="relation" ref="58850"/>
+    <member role="" type="relation" ref="21493"/>
+    <member role="" type="relation" ref="31320"/>
+    <member role="" type="relation" ref="50730"/>
+    <member role="" type="relation" ref="31855"/>
+    <member role="" type="relation" ref="22584"/>
+    <member role="" type="relation" ref="61975"/>
+    <member role="" type="relation" ref="28413"/>
+    <member role="" type="relation" ref="30093"/>
+    <member role="" type="relation" ref="54049"/>
+    <member role="" type="relation" ref="53951"/>
+    <member role="" type="relation" ref="63661"/>
+    <member role="" type="relation" ref="61474"/>
+    <member role="" type="relation" ref="32304"/>
+    <member role="" type="relation" ref="61464"/>
+    <member role="" type="relation" ref="32305"/>
+    <member role="" type="relation" ref="30121"/>
+    <member role="" type="relation" ref="31314"/>
+    <member role="" type="relation" ref="21163"/>
+    <member role="" type="relation" ref="28362"/>
+    <member role="" type="relation" ref="32298"/>
+    <member role="" type="relation" ref="23801"/>
+    <member role="" type="relation" ref="22488"/>
+    <member role="" type="relation" ref="66295"/>
+    <member role="" type="relation" ref="66309"/>
+    <member role="" type="relation" ref="60147"/>
+    <member role="" type="relation" ref="60358"/>
+    <member role="" type="relation" ref="65079"/>
+    <member role="" type="relation" ref="60910"/>
+    <member role="" type="relation" ref="65006"/>
+    <member role="" type="relation" ref="30877"/>
+    <member role="" type="relation" ref="48326"/>
+    <member role="" type="relation" ref="21457"/>
+    <member role="" type="relation" ref="22681"/>
+    <member role="" type="relation" ref="26686"/>
+    <member role="" type="relation" ref="59861"/>
+    <member role="" type="relation" ref="20767"/>
+    <member role="" type="relation" ref="22171"/>
+    <member role="" type="relation" ref="21561"/>
+    <member role="" type="relation" ref="21499"/>
+    <member role="" type="relation" ref="21489"/>
+    <member role="" type="relation" ref="21502"/>
+    <member role="" type="relation" ref="22923"/>
+    <member role="" type="relation" ref="22903"/>
+    <member role="" type="relation" ref="30176"/>
+    <member role="" type="relation" ref="32678"/>
+    <member role="" type="relation" ref="35050"/>
+    <member role="" type="relation" ref="22922"/>
+    <member role="" type="relation" ref="73685"/>
+    <member role="" type="relation" ref="28278"/>
+    <member role="" type="relation" ref="55819"/>
+    <member role="" type="relation" ref="58821"/>
+    <member role="" type="relation" ref="58978"/>
+    <member role="" type="relation" ref="61162"/>
+    <member role="" type="relation" ref="35167"/>
+    <member role="" type="relation" ref="61446"/>
+    <member role="" type="relation" ref="28411"/>
+    <member role="" type="relation" ref="61457"/>
+    <member role="" type="relation" ref="61187"/>
+    <member role="" type="relation" ref="21331"/>
+    <member role="" type="relation" ref="60397"/>
+    <member role="" type="relation" ref="60415"/>
+    <member role="" type="relation" ref="31493"/>
+    <member role="" type="relation" ref="30706"/>
+    <member role="" type="relation" ref="65342"/>
+    <member role="" type="relation" ref="62964"/>
+    <member role="" type="relation" ref="4310"/>
+    <member role="" type="relation" ref="22158"/>
+    <member role="" type="relation" ref="63160"/>
+    <member role="" type="relation" ref="55768"/>
+    <member role="" type="relation" ref="30437"/>
+    <member role="" type="relation" ref="65355"/>
+    <member role="" type="relation" ref="64421"/>
+    <member role="" type="relation" ref="55766"/>
+    <member role="" type="relation" ref="65349"/>
+    <member role="" type="relation" ref="65353"/>
+    <member role="" type="relation" ref="28082"/>
+    <member role="" type="relation" ref="28713"/>
+    <member role="" type="relation" ref="21460"/>
+    <member role="" type="relation" ref="22492"/>
+    <member role="" type="relation" ref="28540"/>
+    <member role="" type="relation" ref="22929"/>
+    <member role="" type="relation" ref="59475"/>
+    <member role="" type="relation" ref="52584"/>
+    <member role="" type="relation" ref="59464"/>
+    <member role="" type="relation" ref="59481"/>
+    <member role="" type="relation" ref="195437"/>
+    <member role="" type="relation" ref="57153"/>
+    <member role="" type="relation" ref="49546"/>
+    <member role="" type="relation" ref="23413"/>
+    <member role="" type="relation" ref="56440"/>
+    <member role="" type="relation" ref="59873"/>
+    <member role="" type="relation" ref="60395"/>
+    <member role="" type="relation" ref="28425"/>
+    <member role="" type="relation" ref="33274"/>
+    <member role="" type="relation" ref="31866"/>
+    <member role="" type="relation" ref="58245"/>
+    <member role="" type="relation" ref="21996"/>
+    <member role="" type="relation" ref="51174"/>
+    <member role="" type="relation" ref="49630"/>
+    <member role="" type="relation" ref="35339"/>
+    <member role="" type="relation" ref="65331"/>
+    <member role="" type="relation" ref="34224"/>
+    <member role="" type="relation" ref="62017"/>
+    <member role="" type="relation" ref="61082"/>
+    <member role="" type="relation" ref="59491"/>
+    <member role="" type="relation" ref="193452"/>
+    <member role="" type="relation" ref="61079"/>
+    <member role="" type="relation" ref="296038"/>
+    <member role="" type="relation" ref="35353"/>
+    <member role="" type="relation" ref="20546"/>
+    <member role="" type="relation" ref="56450"/>
+    <member role="" type="relation" ref="102220"/>
+    <member role="" type="relation" ref="31057"/>
+    <member role="" type="relation" ref="31838"/>
+    <member role="" type="relation" ref="368163"/>
+    <member role="" type="relation" ref="102228"/>
+    <member role="" type="relation" ref="102231"/>
+    <member role="" type="relation" ref="102405"/>
+    <member role="" type="relation" ref="102413"/>
+    <member role="" type="relation" ref="102414"/>
+    <member role="" type="relation" ref="331227"/>
+    <member role="" type="relation" ref="102424"/>
+    <member role="" type="relation" ref="175298"/>
+    <member role="" type="relation" ref="102492"/>
+    <member role="" type="relation" ref="3344"/>
+    <member role="" type="relation" ref="111259"/>
+    <member role="" type="relation" ref="21305"/>
+    <member role="" type="relation" ref="102530"/>
+    <member role="" type="relation" ref="64474"/>
+    <member role="" type="relation" ref="61396"/>
+    <member role="" type="relation" ref="32203"/>
+    <member role="" type="relation" ref="30112"/>
+    <member role="" type="relation" ref="33671"/>
+    <member role="" type="relation" ref="62087"/>
+    <member role="" type="relation" ref="21164"/>
+    <member role="" type="relation" ref="63636"/>
+    <member role="" type="relation" ref="21497"/>
+    <member role="" type="relation" ref="105565"/>
+    <member role="" type="relation" ref="332126"/>
+    <member role="" type="relation" ref="331610"/>
+    <member role="" type="relation" ref="102902"/>
+    <member role="" type="relation" ref="65338"/>
+    <member role="" type="relation" ref="29891"/>
+    <member role="" type="relation" ref="63018"/>
+    <member role="" type="relation" ref="178525"/>
+    <member role="" type="relation" ref="373759"/>
+    <member role="" type="relation" ref="373770"/>
+    <member role="" type="relation" ref="373775"/>
+    <member role="" type="relation" ref="373789"/>
+    <member role="" type="relation" ref="373801"/>
+    <member role="" type="relation" ref="374084"/>
+    <member role="" type="relation" ref="374116"/>
+    <member role="" type="relation" ref="374199"/>
+    <member role="" type="relation" ref="332058"/>
+    <member role="" type="relation" ref="34685"/>
+    <member role="" type="relation" ref="27013"/>
+    <member role="" type="relation" ref="374237"/>
+    <member role="" type="relation" ref="374269"/>
+    <member role="" type="relation" ref="374296"/>
+    <member role="" type="relation" ref="374313"/>
+    <member role="" type="relation" ref="374319"/>
+    <member role="" type="relation" ref="65691"/>
+    <member role="" type="relation" ref="374374"/>
+    <member role="" type="relation" ref="332065"/>
+    <member role="" type="relation" ref="82593"/>
+    <member role="" type="relation" ref="27366"/>
+    <member role="" type="relation" ref="35221"/>
+    <member role="" type="relation" ref="332032"/>
+    <member role="" type="relation" ref="332054"/>
+    <member role="" type="relation" ref="26665"/>
+    <member role="" type="relation" ref="21330"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="highway" v="primary"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="name" v="Bundesstraßen"/>
+    <tag k="is_in" v="Deutschland, Europe"/>
+    <tag k="type" v="network"/>
+    <tag k="operator" v="Bundesrepublik Deutschland"/>
+  </relation>
+  <relation version="217" timestamp="2009-09-03T20:19:50Z" user="anbr" id="86728" actor="2">
+    <member role="forward" type="relation" ref="187767"/>
+    <member role="backward" type="relation" ref="188380"/>
+    <tag k="ref" v="RE 1"/>
+    <tag k="name" v="RE 1 Magdeburg - Cottbus"/>
+    <tag k="service" v="regional"/>
+    <tag k="line" v="rail"/>
+    <tag k="type" v="line"/>
+    <tag k="operator" v="DB Regio Nordost"/>
+  </relation>
+  <relation version="4" timestamp="2009-10-27T23:54:40Z" user="Kartenmacher" id="174254" actor="2">
+    <member role="" type="relation" ref="17680"/>
+    <member role="" type="relation" ref="86805"/>
+    <member role="" type="relation" ref="102244"/>
+    <member role="" type="relation" ref="80402"/>
+    <member role="" type="relation" ref="78079"/>
+    <member role="" type="relation" ref="76246"/>
+    <member role="" type="relation" ref="63607"/>
+    <member role="" type="relation" ref="17901"/>
+    <member role="" type="relation" ref="227648"/>
+    <tag k="name" v="ExpressBus-Linien in Berlin"/>
+    <tag k="type" v="network"/>
+  </relation>
+  <relation version="1" timestamp="2009-06-18T14:15:15Z" user="Xanadu" id="158810" actor="2">
+    <member role="from" type="way" ref="4068038"/>
+    <member role="via" type="node" ref="26704448"/>
+    <member role="to" type="way" ref="4381557"/>
+    <tag k="except" v="bicycle"/>
+    <tag k="restriction" v="no_left_turn"/>
+    <tag k="type" v="restriction"/>
+  </relation>
+  <relation version="16" timestamp="2009-07-19T14:34:22Z" user="TobHaeg" id="18813" actor="2">
+    <member role="" type="relation" ref="19549"/>
+    <member role="" type="relation" ref="61466"/>
+    <member role="" type="relation" ref="28314"/>
+    <member role="" type="relation" ref="61469"/>
+    <member role="" type="relation" ref="14981"/>
+    <member role="" type="relation" ref="14983"/>
+    <member role="" type="relation" ref="64095"/>
+    <member role="" type="relation" ref="64094"/>
+    <member role="" type="relation" ref="64050"/>
+    <member role="" type="relation" ref="14811"/>
+    <member role="" type="relation" ref="14809"/>
+    <member role="" type="relation" ref="14810"/>
+    <member role="" type="relation" ref="14984"/>
+    <member role="" type="relation" ref="175267"/>
+    <member role="" type="relation" ref="59686"/>
+    <tag k="name" v="S-Bahnlinien in Berlin"/>
+    <tag k="type" v="network"/>
+    <tag k="network" v="rail"/>
+  </relation>
+  <relation version="112" timestamp="2009-12-12T12:46:28Z" user="anbr" id="18812" actor="2">
+    <member role="" type="relation" ref="174283"/>
+    <member role="" type="relation" ref="174255"/>
+    <member role="" type="relation" ref="174254"/>
+    <member role="" type="relation" ref="17697"/>
+    <member role="" type="relation" ref="18856"/>
+    <member role="" type="relation" ref="18908"/>
+    <member role="" type="relation" ref="52425"/>
+    <member role="" type="relation" ref="56341"/>
+    <member role="" type="relation" ref="56347"/>
+    <member role="" type="relation" ref="53978"/>
+    <member role="" type="relation" ref="51810"/>
+    <member role="" type="relation" ref="56361"/>
+    <member role="" type="relation" ref="57737"/>
+    <member role="" type="relation" ref="57732"/>
+    <member role="" type="relation" ref="51799"/>
+    <member role="" type="relation" ref="304651"/>
+    <member role="" type="relation" ref="138710"/>
+    <member role="" type="relation" ref="88363"/>
+    <member role="" type="relation" ref="58147"/>
+    <member role="" type="relation" ref="36598"/>
+    <member role="" type="relation" ref="87439"/>
+    <member role="" type="relation" ref="165983"/>
+    <member role="" type="relation" ref="167346"/>
+    <member role="" type="relation" ref="169925"/>
+    <member role="" type="relation" ref="74403"/>
+    <member role="" type="relation" ref="106490"/>
+    <member role="" type="relation" ref="76040"/>
+    <member role="" type="relation" ref="282444"/>
+    <member role="" type="relation" ref="77797"/>
+    <member role="" type="relation" ref="35032"/>
+    <member role="" type="relation" ref="102654"/>
+    <member role="" type="relation" ref="35055"/>
+    <member role="" type="relation" ref="35009"/>
+    <member role="" type="relation" ref="228027"/>
+    <member role="" type="relation" ref="93502"/>
+    <member role="" type="relation" ref="93861"/>
+    <member role="" type="relation" ref="88105"/>
+    <member role="" type="relation" ref="78064"/>
+    <member role="" type="relation" ref="64377"/>
+    <member role="" type="relation" ref="64315"/>
+    <member role="" type="relation" ref="76248"/>
+    <member role="" type="relation" ref="63739"/>
+    <member role="" type="relation" ref="63718"/>
+    <member role="" type="relation" ref="63965"/>
+    <member role="" type="relation" ref="63740"/>
+    <member role="" type="relation" ref="75392"/>
+    <member role="" type="relation" ref="48515"/>
+    <member role="" type="relation" ref="39065"/>
+    <member role="" type="relation" ref="79820"/>
+    <member role="" type="relation" ref="39061"/>
+    <member role="" type="relation" ref="227622"/>
+    <member role="" type="relation" ref="67574"/>
+    <member role="" type="relation" ref="17682"/>
+    <member role="" type="relation" ref="61050"/>
+    <member role="" type="relation" ref="51804"/>
+    <member role="" type="relation" ref="27417"/>
+    <member role="" type="relation" ref="169942"/>
+    <member role="" type="relation" ref="17708"/>
+    <member role="" type="relation" ref="15642"/>
+    <member role="" type="relation" ref="295555"/>
+    <member role="" type="relation" ref="27415"/>
+    <member role="" type="relation" ref="20063"/>
+    <member role="" type="relation" ref="238132"/>
+    <member role="" type="relation" ref="35042"/>
+    <member role="" type="relation" ref="35013"/>
+    <member role="" type="relation" ref="114255"/>
+    <member role="" type="relation" ref="77100"/>
+    <member role="" type="relation" ref="78432"/>
+    <member role="" type="relation" ref="76247"/>
+    <member role="" type="relation" ref="57822"/>
+    <member role="" type="relation" ref="64298"/>
+    <member role="" type="relation" ref="17903"/>
+    <member role="" type="relation" ref="63725"/>
+    <member role="" type="relation" ref="67560"/>
+    <member role="" type="relation" ref="227583"/>
+    <member role="" type="relation" ref="238058"/>
+    <member role="" type="relation" ref="103166"/>
+    <member role="" type="relation" ref="53981"/>
+    <member role="" type="relation" ref="300962"/>
+    <member role="" type="relation" ref="305650"/>
+    <member role="" type="relation" ref="67289"/>
+    <member role="" type="relation" ref="58164"/>
+    <member role="" type="relation" ref="172094"/>
+    <member role="" type="relation" ref="111543"/>
+    <member role="" type="relation" ref="147324"/>
+    <member role="" type="relation" ref="56436"/>
+    <member role="" type="relation" ref="165138"/>
+    <member role="" type="relation" ref="163359"/>
+    <member role="" type="relation" ref="238059"/>
+    <member role="" type="relation" ref="361004"/>
+    <member role="" type="relation" ref="83053"/>
+    <member role="" type="relation" ref="78434"/>
+    <member role="" type="relation" ref="78436"/>
+    <member role="" type="relation" ref="78036"/>
+    <member role="" type="relation" ref="63852"/>
+    <member role="" type="relation" ref="228506"/>
+    <member role="" type="relation" ref="229592"/>
+    <member role="" type="relation" ref="85388"/>
+    <member role="" type="relation" ref="85934"/>
+    <member role="" type="relation" ref="85352"/>
+    <tag k="name" v="Buslinien in Berlin"/>
+    <tag k="type" v="network"/>
+    <tag k="network" v="VBB"/>
+  </relation>
+  <relation version="896" timestamp="2009-10-12T11:12:13Z" user="ajoessen" id="18560" actor="2">
+    <member role="" type="relation" ref="13288"/>
+    <member role="" type="relation" ref="50272"/>
+    <tag k="route" v="bicycle"/>
+    <tag k="name" v="Capitals Route"/>
+    <tag k="type" v="route"/>
+    <tag k="note" v="EV2, in DE no signs"/>
+    <tag k="network" v="icn"/>
+  </relation>
+  <relation version="10" timestamp="2009-10-29T08:02:49Z" user="ajoessen" id="50273" actor="2">
+    <member role="" type="relation" ref="13288"/>
+    <member role="" type="relation" ref="50272"/>
+    <member role="" type="relation" ref="286977"/>
+    <tag k="route" v="bicycle"/>
+    <tag k="name" v="Euro Route R1"/>
+    <tag k="type" v="network"/>
+    <tag k="note" v="international relation containing the national relations, please do not add ways"/>
+    <tag k="network" v="icn"/>
+  </relation>
+  <relation version="5" timestamp="2008-07-31T18:12:28Z" user="sumpfralle" id="16163" actor="2">
+    <member role="capital" type="relation" ref="16162"/>
+    <member role="border" type="relation" ref="16354"/>
+    <tag k="name" v="Berlin"/>
+    <tag k="type" v="state"/>
+  </relation>
+  <relation version="9" timestamp="2009-07-19T13:40:11Z" user="TobHaeg" id="53181" actor="2">
+    <member role="" type="relation" ref="58767"/>
+    <member role="" type="relation" ref="58428"/>
+    <member role="" type="relation" ref="58426"/>
+    <member role="" type="relation" ref="58429"/>
+    <member role="" type="relation" ref="58430"/>
+    <member role="" type="relation" ref="51942"/>
+    <member role="" type="relation" ref="58425"/>
+    <member role="" type="relation" ref="58424"/>
+    <member role="" type="relation" ref="58423"/>
+    <member role="" type="relation" ref="58431"/>
+    <tag k="name" v="U-Bahnlinien in Berlin"/>
+    <tag k="type" v="network"/>
+    <tag k="operator" v="BVG"/>
+    <tag k="network" v="subway"/>
+  </relation>
+  <relation version="1" timestamp="2009-09-21T13:05:17Z" user="Ronin1" id="270187" actor="2">
+    <tag k="restriction" v="no_left_turn"/>
+    <tag k="type" v="restriction"/>
+  </relation>
+  <relation version="1" timestamp="2009-09-21T13:03:29Z" user="Ronin1" id="270186" actor="2">
+    <tag k="restriction" v="no_right_turn"/>
+    <tag k="type" v="restriction"/>
+  </relation>
+  <bound box="0.000000,0.000000,52.516301,13.377353" origin="http://www.openstreetmap.org/api/0.6"/>
+</osm>

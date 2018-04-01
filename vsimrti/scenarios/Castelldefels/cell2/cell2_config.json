@@ -1,0 +1,6 @@
+{
+    "debugGeocasting": false,
+    "visualizeRegions": false,
+    "networkConfigurationFile": "network.json",
+    "regionConfigurationFile": "regions.json"
+}
