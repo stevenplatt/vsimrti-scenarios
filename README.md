@@ -26,4 +26,4 @@ docker run -it --rm -p 6080:80 telecomsteve/vsimrti-web
 ```
 Connect to the web instance at localhost address: http://127.0.0.1:6080/
 
-<img src="https://raw.github.com/stevenplatt/docker-vsimrti-web/master/screenshots/vsimrti-web.jpg?v1" width=700/>
+![screenshot](https://raw.github.com/stevenplatt/docker-vsimrti-web/master/screenshots/vsimrti-web.jpg?v1)
