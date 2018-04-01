@@ -1,71 +1,66 @@
 {
 	"prototypes":[
 		{
-			"applications":["com.dcaiti.vsimrti.app.tutorials.tiergarten.vehicle.TiergartenVehicle",
-                "com.dcaiti.vsimrti.app.tutorials.tiergarten.vehicle.TiergartenVehicleSlave"],
 			"name":"PKW",
-			"accel":1.5,
+			"accel":2.6,
 			"decel":4.5,
 			"length":5.00,
-			"maxSpeed":10.0,
+			"maxSpeed":70.0,
 			"minGap":2.5,
 			"sigma":0.5,
 			"tau":1
 		},
 		{
-			"applications":["com.dcaiti.vsimrti.app.tutorials.tiergarten.vehicle.TrafficLightVehicle"],
-			"name":"TLPKW"
-		},
-		{
-			"applications":["com.dcaiti.vsimrti.app.tutorials.tiergarten.rsu.TiergartenRSU"],
-			"name":"RSU"
+			"name":"electricPKW",			
+			"vehicleClass": "ElectricVehicle",
+			"accel":2.6,
+			"decel":4.5,
+			"length":5.00,
+			"maxSpeed":40.0,
+			"minGap":2.5,
+			"sigma":0.5,
+			"tau":1
 		},
         {
-            "applications":["com.dcaiti.vsimrti.app.tutorials.tiergarten.trafficLight.TrafficLightApp"],
-            "name":"TrafficLight"
+            "applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"],
+            "name":"WeatherServer"
         }
 	],
-    "tls":[
+    "rsus":[
         {
-            "tlName": "27011311",
-            "name":"TrafficLight"
-        },
-        {
-            "tlName": "252864801",
-            "name":"TrafficLight"
+            "lat":52.65027421760045,
+            "lon":13.545005321502686,
+            "name":"WeatherServer"
         }
     ],
-	"rsus":[
-		{
-			"lat":52.513060766781614,
-			"lon":13.32891047000885,
-			"name":"RSU"
-		}
-	],
 	"vehicles":[
 		{
-			"startingTime":1.0,
-			"route":0,
-			"maxNumberVehicles":1,
-			"types":[{"name":"PKW"}]
-		},
-		{
-			"startingTime":5.0,
-			"route":0,
-			"maxNumberVehicles":1,
-			"types":[{"name":"PKW"}]
-		},
-		{
-			"startingTime":8.0,
-			"route":0,
-			"maxNumberVehicles":1,
-			"types":[{"name":"TLPKW"}]
-		},
-        {
-			"startingTime":10.0,
-			"route":0,
-			"maxNumberVehicles":1,
-			"types":[{"name":"PKW"}]
+			"startingTime": 5.0,
+			"targetDensity":1200,
+			"maxNumberVehicles": 120,
+			"route":"1",
+			"types":[
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.1
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.2
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.6
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"electricPKW",
+					"weight":0.1
+				}
+			]
 		}
 	]
 }

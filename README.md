@@ -30,11 +30,11 @@ Running Simulations
 -------------------
 Basic simulation run:
 ```
-./ vsimrti.sh -u [username] -s [simulation name]
+./vsimrti.sh -u [username] -s [simulation name]
 ```
 Simulation run with OpenStreetView visualizer:
 ```
-./ vsimrti.sh -u [username] -s [simulation name] -v
+./vsimrti.sh -u [username] -s [simulation name] -v
 ```
 
 Simulations List

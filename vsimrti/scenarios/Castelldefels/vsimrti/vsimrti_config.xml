@@ -3,10 +3,10 @@
                xsi:noNamespaceSchemaLocation="https://www.dcaiti.tu-berlin.de/research/simulation/download/get/scenarios/scenarioname/vsimrti/vsimrti_config.xsd">
     <simulation>
         <!-- Scenario name -->
-        <id>Tiergarten</id>
+        <id>Barnim</id>
         <!-- Simulation time frame -->
         <starttime>0</starttime>
-        <endtime>180</endtime>
+        <endtime>1200</endtime>
         <!-- Seed for pseudo random number generator used by most of the federates -->
         <randomSeed>268965854</randomSeed>
         <!-- Projection between global and cartesian coordinates -->
@@ -15,12 +15,12 @@
         <WGS84UTMTransformConfig>
         {
             "centerCoordinates": {
-                "longitude": 13.0,
-                "latitude": 52.0
+                "longitude": 13.56,
+                "latitude": 52.63
             },
             "cartesianOffset": {
-                "x": -385769.05,
-                "y": -5819239.15
+                "x": -397957.77,
+                "y": -5826114.68
             }
         }
         </WGS84UTMTransformConfig>

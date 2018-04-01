@@ -1,0 +1,16 @@
+2018-04-01 11:20:09,426 INFO  SumoAmbassador - File found, read successfully.
+The following object was created (This is the created, internal JSON data object and might differ from the initial JSON-String read).
+The normal string representation.
+{"updateInterval":1000,"sumoConfigurationFile":"tiergarten.sumo.cfg","exitOnInsertionError":true,"additionalSumoParameters":" --time-to-teleport 0  --seed 100000"}
+The pretty string representation.
+{
+  "updateInterval": 1000,
+  "sumoConfigurationFile": "tiergarten.sumo.cfg",
+  "exitOnInsertionError": true,
+  "additionalSumoParameters": " --time-to-teleport 0  --seed 100000"
+}
+2018-04-01 11:20:09,426 INFO  SumoAmbassador - cSumo.updateInterval: 1000
+2018-04-01 11:20:09,426 INFO  SumoAmbassador - cSumo.sumoConfigurationFile: tiergarten.sumo.cfg
+2018-04-01 11:20:09,426 INFO  SumoAmbassador - cSumo.sumoConfigurationFile: tiergarten.sumo.cfg
+2018-04-01 11:20:09,443 INFO  SumoAmbassador - routeFilename: tiergarten.rou.xml
+2018-04-01 11:20:09,448 INFO  SumoAmbassador - stepSize: 1.0

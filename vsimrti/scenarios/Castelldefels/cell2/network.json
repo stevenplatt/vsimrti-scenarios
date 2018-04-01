@@ -2,30 +2,27 @@
     "globalRegion": {
         "uplink": {
             "delay": {
-                "type":         "GammaRandomDelay",
-                "minDelay":     50,
-                "expDelay":     150,
-                "prpl":      0,
-                "retries":   2
+                "type":         "ConstantDelay",
+                "delay":        100,
+                "prpl":         0,
+                "retries":      2
             },
             "capacity":         28000000
         },
         "downlink": {
             "unicast": {
                 "delay": {
-                    "type":         "GammaRandomDelay",
-                    "minDelay":     50,
-                    "expDelay":     150,
-                    "prpl":      0,
-                    "retries":   2
+                    "type":         "ConstantDelay",
+                    "delay":        100,
+                    "prpl":         0,
+                    "retries":      2
                 }
             },
             "multicast": {
                 "delay": {
-                    "type":         "GammaRandomDelay",
-                    "minDelay":     100,
-                    "expDelay":     200,
-                    "prpl":      0
+                    "type":         "ConstantDelay",
+                    "delay":        100,
+                    "prpl":         0
                 },
                 "usableCapacity":   0.6
             },

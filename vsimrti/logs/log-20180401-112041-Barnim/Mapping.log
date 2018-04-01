@@ -1,0 +1,85 @@
+2018-04-01 11:20:41,874 INFO  MappingAmbassador - File found, read successfully.
+The following object was created (This is the created, internal JSON data object and might differ from the initial JSON-String read).
+The normal string representation.
+{"prototypes":[{"name":"PKW","length":5.0,"minGap":2.5,"maxSpeed":70.0,"accel":2.6,"decel":4.5,"sigma":0.5,"tau":1.0},{"name":"electricPKW","length":5.0,"minGap":2.5,"maxSpeed":40.0,"vehicleClass":"ElectricVehicle","accel":2.6,"decel":4.5,"sigma":0.5,"tau":1.0},{"name":"WeatherServer","applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"]}],"rsus":[{"name":"WeatherServer","lat":52.65027421760045,"lon":13.545005321502686}],"vehicles":[{"startingTime":5.0,"targetDensity":1200.0,"maxNumberVehicles":120,"types":[{"name":"PKW","weight":0.1,"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell","com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"]},{"name":"PKW","weight":0.2,"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp","com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"]},{"name":"PKW","weight":0.6,"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"]},{"name":"electricPKW","weight":0.1,"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"]}],"deterministic":true,"pos":0,"route":"1"}]}
+The pretty string representation.
+{
+  "prototypes": [
+    {
+      "name": "PKW",
+      "length": 5.0,
+      "minGap": 2.5,
+      "maxSpeed": 70.0,
+      "accel": 2.6,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+    },
+    {
+      "name": "electricPKW",
+      "length": 5.0,
+      "minGap": 2.5,
+      "maxSpeed": 40.0,
+      "vehicleClass": "ElectricVehicle",
+      "accel": 2.6,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+    },
+    {
+      "name": "WeatherServer",
+      "applications": [
+        "com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"
+      ]
+    }
+  ],
+  "rsus": [
+    {
+      "name": "WeatherServer",
+      "lat": 52.65027421760045,
+      "lon": 13.545005321502686
+    }
+  ],
+  "vehicles": [
+    {
+      "startingTime": 5.0,
+      "targetDensity": 1200.0,
+      "maxNumberVehicles": 120,
+      "types": [
+        {
+          "name": "PKW",
+          "weight": 0.1,
+          "applications": [
+            "com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell",
+            "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"
+          ]
+        },
+        {
+          "name": "PKW",
+          "weight": 0.2,
+          "applications": [
+            "com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp",
+            "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"
+          ]
+        },
+        {
+          "name": "PKW",
+          "weight": 0.6,
+          "applications": [
+            "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"
+          ]
+        },
+        {
+          "name": "electricPKW",
+          "weight": 0.1,
+          "applications": [
+            "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"
+          ]
+        }
+      ],
+      "deterministic": true,
+      "pos": 0,
+      "route": "1"
+    }
+  ]
+}
