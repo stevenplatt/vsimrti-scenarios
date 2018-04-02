@@ -1,0 +1,28 @@
+{
+    "version": "0.16.0",
+    
+    "singlehop": {
+        "_singlehop radius in m": 0,
+        "radius":               509.4,
+        "_delay config according to vsimrti-communication": 0,
+        "delay": {
+            "type":             "SimpleRandomDelay",
+            "steps":            5,
+            "minDelay":         0.4,
+            "maxDelay":         2.4,
+            "prpl":             0,
+            "retries":          0
+        }
+    },
+    
+    "multihop": {
+        "_delay config according to vsimrti-communication": 0,
+        "delay": {
+            "type":             "GammaRandomDelay",
+            "minDelay":         10,
+            "expDelay":         30,
+            "prpl":             0,
+            "retries":          2
+        }
+    }
+}
