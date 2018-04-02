@@ -1,0 +1,66 @@
+{
+	"prototypes":[
+		{
+			"name":"PKW",
+			"accel":2.6,
+			"decel":4.5,
+			"length":5.00,
+			"maxSpeed":50.0,
+			"minGap":2.5,
+			"sigma":0.5,
+			"tau":1
+		},
+		{
+			"name":"electricPKW",
+			"vehicleClass": "ElectricVehicle",
+			"accel":2.6,
+			"decel":4.5,
+			"length":5.00,
+			"maxSpeed":20.0,
+			"minGap":2.5,
+			"sigma":0.5,
+			"tau":1
+		},
+        {
+            "applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"],
+            "name":"WeatherServer"
+        }
+	],
+    "rsus":[
+        {
+            "lat":41.16000000000000,
+            "lon":1.580000000000000,
+            "name":"WeatherServer"
+        }
+    ],
+	"vehicles":[
+		{
+			"startingTime": 5.0,
+			"targetDensity":120,
+			"maxNumberVehicles": 10,
+			"route":"1",
+			"types":[
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.1
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.2
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"PKW",
+					"weight":0.6
+				},
+				{
+					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp"],
+					"name":"electricPKW",
+					"weight":0.1
+				}
+			]
+		}
+	]
+}
