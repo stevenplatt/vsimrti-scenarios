@@ -160,7 +160,7 @@
             <logger name="com.dcaiti.vsimrti.fed.omnetpp" additivity="false" level="INFO">
                 <appender-ref ref="CommunicationLog"/>
             </logger>
-            <logger name="com.dcaiti.vsimrti.fed.ns3" additivity="false" level="INFO">
+            <logger name="com.dcaiti.vsimrti.fed.ns3" additivity="true" level="DEBUG">
                 <appender-ref ref="CommunicationLog"/>
             </logger>
             <logger name="com.dcaiti.vsimrti.fed.sns" additivity="false" level="INFO">
@@ -170,7 +170,7 @@
             <logger name="OmnetppFederate" additivity="false" level="INFO">
                 <appender-ref ref="CommunicationDetailsLog"/>
             </logger>
-            <logger name="Ns3Federate" additivity="false" level="INFO">
+            <logger name="Ns3Federate" additivity="true" level="DEBUG">
                 <appender-ref ref="CommunicationDetailsLog"/>
             </logger>
             <logger name="com.dcaiti.vsimrti.fed.applicationNT.ambassador.navigation" additivity="false" level="INFO">
