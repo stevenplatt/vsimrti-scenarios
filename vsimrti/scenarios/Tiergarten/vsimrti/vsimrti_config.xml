@@ -41,8 +41,8 @@
         <federate id="cell2" active="false"/>
         <!-- V2X (ad hoc) network simulators -->
         <federate id="omnetpp" active="false"/>
-        <federate id="ns3" active="true"/>
-        <federate id="sns" active="false"/>
+        <federate id="ns3" active="false"/>
+        <federate id="sns" active="true"/>
         <!-- Traffic simulators -->
         <federate id="sumo" active="true"/>
         <!-- Application simulator -->
