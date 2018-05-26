@@ -25,37 +25,27 @@
 	"vehicles":[
 		{
 			"startingTime": 5.0,
-			"targetDensity":1200,
+			"targetDensity":120,
 			"maxNumberVehicles": 20,
 			"route":"1",
 			"types":[
 				{
 					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
 					"name":"PKW",
-					"weight":0.8
-				},
-				{
-					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
-					"name":"PKW",
-					"weight":0.2
+					"weight":1
 				}
 			]
 		},
 		{
 			"startingTime": 5.0,
-			"targetDensity":1200,
-			"maxNumberVehicles": 20,
+			"targetDensity":120,
+			"maxNumberVehicles": 5,
 			"route":"2",
 			"types":[
 				{
 					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
 					"name":"PKW",
-					"weight":0.8
-				},
-				{
-					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningApp", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
-					"name":"PKW",
-					"weight":0.2
+					"weight":1
 				}
 			]
 		}
