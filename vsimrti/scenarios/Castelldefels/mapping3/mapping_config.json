@@ -5,7 +5,7 @@
 			"accel":2.6,
 			"decel":4.5,
 			"length":5.00,
-			"maxSpeed":70.0,
+			"maxSpeed":20.0,
 			"minGap":2.5,
 			"sigma":0.5,
 			"tau":1
@@ -25,8 +25,8 @@
 	"vehicles":[
 		{
 			"startingTime": 5.0,
-			"targetDensity":120,
-			"maxNumberVehicles": 20,
+			"targetDensity":500,
+			"maxNumberVehicles": 200,
 			"route":"1",
 			"types":[
 				{
@@ -39,7 +39,7 @@
 		{
 			"startingTime": 5.0,
 			"targetDensity":120,
-			"maxNumberVehicles": 5,
+			"maxNumberVehicles": 20,
 			"route":"2",
 			"types":[
 				{
