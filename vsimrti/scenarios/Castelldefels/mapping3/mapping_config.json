@@ -11,7 +11,7 @@
 			"tau":1
 		},
         {
-            "applications":["com.telecomsteve.vsimrti.applications.TrafficCircleApp"],
+            "applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"],
             "name":"WeatherServer"
         }
 	],
