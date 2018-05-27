@@ -6,7 +6,7 @@
         <id>Castelldefels</id>
         <!-- Simulation time frame -->
         <starttime>0</starttime>
-        <endtime>1200</endtime>
+        <endtime>2500</endtime>
         <!-- Seed for pseudo random number generator used by most of the federates -->
         <randomSeed>268965854</randomSeed>
         <!-- Projection between global and cartesian coordinates -->
