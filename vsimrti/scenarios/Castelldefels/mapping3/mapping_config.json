@@ -11,14 +11,14 @@
 			"tau":1
 		},
         {
-            "applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"],
+            "applications":["com.telecomsteve.vsimrti.applications.TrafficCircleApp"],
             "name":"WeatherServer"
         }
 	],
     "rsus":[
         {
-            "lat":41.27879000000000,
-            "lon":1.978690000000000,
+            "lat":41.28039945484303,
+            "lon":1.975863217521691,
             "name":"WeatherServer"
         }
     ],
@@ -26,7 +26,7 @@
 		{
 			"startingTime": 5.0,
 			"targetDensity":500,
-			"maxNumberVehicles": 200,
+			"maxNumberVehicles": 100,
 			"route":"1",
 			"types":[
 				{
