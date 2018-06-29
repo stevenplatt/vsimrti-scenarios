@@ -1,6 +1,10 @@
 {
 	"prototypes":[
 		{
+			"applications": [
+				"com.telecomsteve.vsimrti.applications.TiergartenVehicle",
+				"com.telecomsteve.vsimrti.applications.TiergartenVehicleSlave"
+			],
 			"name":"PKW",
 			"accel":2.6,
 			"decel":4.5,
@@ -11,15 +15,15 @@
 			"tau":1
 		},
         {
-            "applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherServer"],
-            "name":"WeatherServer"
+            "applications":["com.telecomsteve.vsimrti.applications.TiergartenRSU"],
+            "name":"RSU"
         }
 	],
     "rsus":[
         {
             "lat":41.28039945484303,
             "lon":1.975863217521691,
-            "name":"WeatherServer"
+            "name":"RSU"
         }
     ],
 	"vehicles":[
@@ -30,9 +34,7 @@
 			"route":"1",
 			"types":[
 				{
-					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
-					"name":"PKW",
-					"weight":1
+					"name":"PKW"
 				}
 			]
 		},
@@ -43,9 +45,7 @@
 			"route":"2",
 			"types":[
 				{
-					"applications":["com.dcaiti.vsimrti.app.tutorials.barnim.WeatherWarningAppCell", "com.dcaiti.vsimrti.app.tutorials.barnim.SlowDownApp", "com.steven.vsimrti.applications.HelloWorldApp"],
-					"name":"PKW",
-					"weight":1
+					"name":"PKW"
 				}
 			]
 		}
