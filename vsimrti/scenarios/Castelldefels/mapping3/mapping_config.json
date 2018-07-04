@@ -2,8 +2,7 @@
 	"prototypes":[
 		{
 			"applications": [
-				"com.telecomsteve.vsimrti.applications.TiergartenVehicle",
-				"com.telecomsteve.vsimrti.applications.TiergartenVehicleSlave"
+				"com.telecomsteve.vsimrti.applications.VehicleBeacon"
 			],
 			"name":"PKW",
 			"accel":2.6,
@@ -15,7 +14,7 @@
 			"tau":1
 		},
         {
-            "applications":["com.telecomsteve.vsimrti.applications.TiergartenRSU"],
+            "applications":["com.telecomsteve.vsimrti.applications.CastelldefelsRSU"],
             "name":"RSU"
         }
 	],
