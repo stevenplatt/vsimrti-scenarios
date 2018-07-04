@@ -3,7 +3,7 @@
     
     "singlehop": {
         "_singlehop radius in m": 0,
-        "radius":               509.4,
+        "radius":               100,
         "_delay config according to vsimrti-communication": 0,
         "delay": {
             "type":             "SimpleRandomDelay",
