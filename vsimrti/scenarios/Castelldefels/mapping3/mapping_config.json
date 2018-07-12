@@ -2,7 +2,9 @@
 	"prototypes":[
 		{
 			"applications": [
-				"com.telecomsteve.vsimrti.applications.VehicleBeacon"
+				"com.telecomsteve.vsimrti.applications.VehicleBeacon", 
+				"com.telecomsteve.vsimrti.applications.SlowDownApp",
+				"com.telecomsteve.vsimrti.applications.NetworkMergeAssist"
 			],
 			"name":"PKW",
 			"accel":2.6,
