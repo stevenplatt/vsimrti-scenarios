@@ -20,4 +20,4 @@ fi
 echo
 echo Created license request prerequisites
 echo Please send the systemInfo.txt to vsimrti@fokus.fraunhofer.de for activation.
-echo 
+echo  
